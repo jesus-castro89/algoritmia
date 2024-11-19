@@ -7,7 +7,7 @@ Para los algoritmos tenemos las siguientes instrucciones:
 3. **Escribir**: Permite mostrar en pantalla algún dato.
 4. **Hacer**: Permite asignar un valor a una variable, ya sea simple o mediante algún cálculo.
 
-## Ejemplo
+## Ejemplo 1
 
 ```text
 Nombre del algoritmo: SumaDeNumeros
@@ -80,7 +80,7 @@ los valores almacenados en las variables y realizar operaciones matemáticas con
 > **Nota:** La instrucción `Hacer` también puede utilizarse para asignar valores arbitrarios a variables, como por
 > ejemplo `Hacer x = 10`, donde se asigna el valor 10 a la variable `x`.
 
-## Ejemplo
+## Ejemplo 2
 
 A continuación, se muestra un ejemplo de un algoritmo que calcula el área de un triángulo a partir de su base y altura:
 
