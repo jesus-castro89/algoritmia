@@ -15,5 +15,7 @@
     <toc-element topic="diagramas-flujo.md">
         <toc-element topic="elementos-diagrama.md"/>
     </toc-element>
-    <toc-element topic="conditional.md"/>
+    <toc-element topic="conditional.md">
+        <toc-element topic="ejemplo-condicional.md"/>
+    </toc-element>
 </instance-profile>
