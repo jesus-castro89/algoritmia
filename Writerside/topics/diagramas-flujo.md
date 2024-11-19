@@ -4,15 +4,6 @@ Los diagramas de flujo son una herramienta visual que se utiliza para representa
 gráfica. Los diagramas de flujo son una forma eficaz de comunicar ideas y procesos complejos de una manera clara y
 concisa.
 
-## Contenido
-
-1. ¿Qué es un diagrama de flujo?
-2. Importancia de los diagramas de flujo
-3. Elementos de un diagrama de flujo
-4. Reglas para crear diagramas de flujo
-5. Ejemplos de diagramas de flujo
-6. Conclusiones
-
 ## Elementos de un diagrama de flujo
 
 Los diagramas de flujo están compuestos por una serie de elementos que representan diferentes partes de un algoritmo
