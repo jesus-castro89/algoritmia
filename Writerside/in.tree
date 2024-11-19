@@ -4,15 +4,16 @@
 
 <instance-profile id="in"
                  name="Instance Name"
-                 start-page="starter.md">
+                 start-page="introduction.md">
 
-    <toc-element topic="bollean-algebra.md"/>
-    <toc-element topic="starter.md">
+    <toc-element topic="introduction.md"/>
+    <toc-element topic="algebra-booleana.md"/>
+    <toc-element topic="pseudocodigo.md">
         <toc-element topic="instructions.md"/>
         <toc-element topic="operadores.md"/>
-        <toc-element topic="conditional.md"/>
     </toc-element>
     <toc-element topic="diagramas-flujo.md">
         <toc-element topic="elementos-diagrama.md"/>
     </toc-element>
+    <toc-element topic="conditional.md"/>
 </instance-profile>
