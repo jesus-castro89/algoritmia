@@ -10,4 +10,20 @@
         <description>Created after removal of "Algoritmia" from Instance Name</description>
         <accepts>start.html</accepts>
     </rule>
+    <rule id="3a70277">
+        <description>Created after removal of "La condicional `En caso de`" from Instance Name</description>
+        <accepts>case.html</accepts>
+    </rule>
+    <rule id="6d94ac2e">
+        <description>Created after removal of "La estructura `switch`" from Instance Name</description>
+        <accepts>switch-extense.html</accepts>
+    </rule>
+    <rule id="3abdd46c">
+        <description>Created after removal of "Estructuras de control de flujo" from Instance Name</description>
+        <accepts>flowcontrol.html</accepts>
+    </rule>
+    <rule id="3e172e98">
+        <description>Created after removal of "Condiciones complejas en los ciclos" from Instance Name</description>
+        <accepts>complex-conditions.html</accepts>
+    </rule>
 </rules>
