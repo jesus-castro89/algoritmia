@@ -21,5 +21,7 @@
     <toc-element topic="switch.md">
         <toc-element topic="switch-examples.md"/>
     </toc-element>
-    <toc-element topic="repetitivas.md"/>
+    <toc-element topic="repetitivas.md">
+        <toc-element topic="loop-example.md"/>
+    </toc-element>
 </instance-profile>
