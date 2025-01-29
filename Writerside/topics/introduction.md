@@ -20,11 +20,11 @@ Los algoritmos tienen las siguientes características:
 
 Los elementos básicos de un algoritmo son los siguientes:
 
-* ** Entrada de datos **: Los datos de entrada son los valores que se utilizan para iniciar el proceso. Por ejemplo, si
+* **Entrada de datos**: Los datos de entrada son los valores que se utilizan para iniciar el proceso. Por ejemplo, si
   queremos calcular el área de un círculo, el radio sería un dato de entrada.
-* ** Proceso **: El proceso es la secuencia de pasos que se deben seguir para resolver el problema. Por ejemplo, para
+* **Proceso**: El proceso es la secuencia de pasos que se deben seguir para resolver el problema. Por ejemplo, para
   calcular el área de un círculo, se debe multiplicar el radio por sí mismo y por el valor de pi.
-* ** Salida de datos **: Los datos de salida son los resultados obtenidos al final del proceso. Por ejemplo, el área
+* **Salida de datos**: Los datos de salida son los resultados obtenidos al final del proceso. Por ejemplo, el área
   calculada del círculo sería un dato de salida.
 
 ## Ejemplo de algoritmo
