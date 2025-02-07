@@ -24,4 +24,9 @@
     <toc-element topic="repetitivas.md">
         <toc-element topic="loop-example.md"/>
     </toc-element>
+    <toc-element toc-title="El Lenguaje C++">
+        <toc-element topic="introduccion-cpp.md"/>
+        <toc-element topic="tipos-cpp.md"/>
+        <toc-element topic="input-output.md"/>
+    </toc-element>
 </instance-profile>
