@@ -1,0 +1,763 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-none.min.js"></script><style>
+        .article {
+            position: relative;
+            padding-bottom: 24px;
+        }
+        
+
+        .bordered-element {
+            border: 1px solid #c4c4c4;
+            overflow: hidden;
+        }
+        
+
+        .bordered-element-rounded {
+            border: 1px solid #c4c4c4;
+            border-radius: 7px;
+            overflow: hidden;
+        }
+        
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+
+        .center-text {
+            text-align: center;
+        }
+        
+
+        .code-block {
+            overflow: hidden;
+            position: relative;
+            padding: 0;
+            border-radius: 8px;
+            font-variant-ligatures: none;
+            background-color: rgba(25, 25, 28, .05);
+            word-break: break-all;
+        }
+        
+
+        .container {
+            max-width: 100%;
+            overflow: hidden;
+            page-break-inside: avoid;
+            display: block;
+        }
+        
+
+        .control {
+            color: #19191c;
+            font-size: 16px;
+            font-weight: 670;
+        }
+        
+
+        .def {
+            padding: 16px;
+            background: #e6e6e6;
+        }
+        
+
+        .definition-list-description {
+            margin-top: 12px;
+            margin-left: 2px;
+        }
+        
+
+        .definition-list-title {
+            font-size: 17px;
+            font-weight: 560;
+            line-height: 24px;
+            color: #19191c;
+            overflow-wrap: break-word;
+        }
+        
+
+        .detached {
+            margin-block-start: 0;
+            margin-block-end: 0;
+            margin-bottom: 8px;
+        }
+        
+
+        .flex {
+            display: flex;
+        }
+        
+
+        .header-row {
+            background: #e6e6e6;
+        }
+        
+
+        .image {
+            max-width: 100%;
+            max-height: 90vh;
+            height: auto;
+        }
+        
+
+        .image-container {
+            max-width: 100vw;
+        }
+        
+
+        .image-size {
+            height: auto;
+        }
+        
+
+        .inline-code {
+            border-radius: 4px;
+            display: inline;
+            padding: 2px 1px;
+            font-family: JetBrains Sans,monospace;
+            background: #e6e6e6;
+        }
+        
+
+        .inline-icon {
+            vertical-align: middle;
+        }
+        
+
+        .list {
+            list-style-type: disc;
+            padding-left: 0;
+            margin-left: 15px;
+        }
+        
+
+        .list-decimal {
+            list-style-type: decimal;
+        }
+        
+
+        .list-item {
+            margin-top: 6px;
+            margin-bottom: 6px;
+            margin-left: 4px;
+        }
+        
+
+        .main-title {
+            padding-bottom: 24px;
+            margin-top: 0;
+            font-size: 40px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        
+
+        .prism {
+            page-break-inside: avoid;
+        }
+        
+        /* PrismJS 1.29.0
+https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+abap+abnf+actionscript+ada+agda+al+antlr4+apacheconf+apex+apl+applescript+aql+arduino+arff+armasm+arturo+asciidoc+aspnet+asm6502+asmatmel+autohotkey+autoit+avisynth+avro-idl+awk+bash+basic+batch+bbcode+bbj+bicep+birb+bison+bnf+bqn+brainfuck+brightscript+bro+bsl+c+csharp+cpp+cfscript+chaiscript+cil+cilkc+cilkcpp+clojure+cmake+cobol+coffeescript+concurnas+csp+cooklang+coq+crystal+css-extras+csv+cue+cypher+d+dart+dataweave+dax+dhall+diff+django+dns-zone-file+docker+dot+ebnf+editorconfig+eiffel+ejs+elixir+elm+etlua+erb+erlang+excel-formula+fsharp+factor+false+firestore-security-rules+flow+fortran+ftl+gml+gap+gcode+gdscript+gedcom+gettext+gherkin+git+glsl+gn+linker-script+go+go-module+gradle+graphql+groovy+haml+handlebars+haskell+haxe+hcl+hlsl+hoon+http+hpkp+hsts+ichigojam+icon+icu-message-format+idris+ignore+inform7+ini+io+j+java+javadoc+javadoclike+javastacktrace+jexl+jolie+jq+jsdoc+js-extras+json+json5+jsonp+jsstacktrace+js-templates+julia+keepalived+keyman+kotlin+kumir+kusto+latex+latte+less+lilypond+liquid+lisp+livescript+llvm+log+lolcode+lua+magma+makefile+markdown+markup-templating+mata+matlab+maxscript+mel+mermaid+metafont+mizar+mongodb+monkey+moonscript+n1ql+n4js+nand2tetris-hdl+naniscript+nasm+neon+nevod+nginx+nim+nix+nsis+objectivec+ocaml+odin+opencl+openqasm+oz+parigp+parser+pascal+pascaligo+psl+pcaxis+peoplecode+perl+php+phpdoc+php-extras+plant-uml+plsql+powerquery+powershell+processing+prolog+promql+properties+protobuf+pug+puppet+pure+purebasic+purescript+python+qsharp+q+qml+qore+r+racket+cshtml+jsx+tsx+reason+regex+rego+renpy+rescript+rest+rip+roboconf+robotframework+ruby+rust+sas+sass+scss+scala+scheme+shell-session+smali+smalltalk+smarty+sml+solidity+solution-file+soy+sparql+splunk-spl+sqf+sql+squirrel+stan+stata+iecst+stylus+supercollider+swift+systemd+t4-templating+t4-cs+t4-vb+tap+tcl+tt2+textile+toml+tremor+turtle+twig+typescript+typoscript+unrealscript+uorazor+uri+v+vala+vbnet+velocity+verilog+vhdl+vim+visual-basic+warpscript+wasm+web-idl+wgsl+wiki+wolfram+wren+xeora+xml-doc+xojo+xquery+yaml+yang+zig&plugins=highlight-keywords */
+code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shadow:0 1px #fff;font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;font-size:1em;text-align:left;white-space:pre-wrap;word-spacing:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{text-shadow:none;background:#b3d4fc}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:16px;margin:0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}
+
+        
+
+        .prompt {
+            flex-direction: row;
+            letter-spacing: .0015em;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+
+        .prompt-content {
+            padding: 15px;
+            overflow: hidden;
+            flex: 1 1 auto;
+        }
+        
+
+        .prompt-content-p p {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        
+
+        .prompt-icon {
+            flex: 0 0 auto;
+            margin-left: 15px;
+            margin-top: 15px;
+            fill: currentcolor;
+            width: 24px;
+            height: 24px;
+        }
+        
+
+        :root {
+            width: 95%;
+            max-width: 95vw;
+            padding: 0 0 0 30px;
+        }
+        
+        body {
+            font-family: JetBrains Sans,serif;
+        }
+        
+        a {
+            overflow-wrap: anywhere;
+            width: 100vw;
+        }
+        
+        
+        @font-face {
+            font-family: JetBrains Sans;
+            src: url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-Light.woff2) format("woff2"), url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-Light.woff) format("woff");
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: JetBrains Sans;
+            src: url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-Regular.woff2) format("woff2"), url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-Regular.woff) format("woff");
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: JetBrains Sans;
+            src: url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-SemiBold.woff2) format("woff2"), url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-SemiBold.woff) format("woff");
+            font-weight: 600;
+            font-style: normal;
+        }
+        
+        
+        code {
+            display: inline;
+            word-break: break-word;
+            font-size: 15px;
+            line-height: inherit;
+            font-variant-ligatures: none;
+            font-family: JetBrains Sans,monospace;
+            white-space: pre-line;
+            overflow-wrap: break-word;
+        }
+        
+        figcaption {
+            margin-top: 5px;
+        }
+        
+        h2 {
+            padding-top: 16px;
+            padding-bottom: 8px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        
+        h3 {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        
+        h4 {
+            padding-top: 4px;
+            padding-bottom: 8px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        
+        p {
+            padding: 0;
+            border: 0;
+            line-height: 25px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            padding-bottom: 8px;
+        }
+        
+        div {
+            display: block;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            page-break-inside: avoid;
+        }
+        
+        th, td {
+            border: 1px solid #c4c4c4;
+            padding: 10px;
+            text-align: left;
+            word-break: break-all;
+        }
+        
+        .no-bold {
+            font-weight: normal; 
+        }
+        
+        .entry {
+            display: grid;
+            grid-template-columns: auto max-content;
+            grid-template-areas: "chapter page";
+            align-items: end;
+            gap: 0 .25rem;
+            line-height: 25px;
+        }
+        
+        .toc-link-container{
+            grid-area: chapter;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .toc-link{
+            text-decoration: none;
+            color: black;
+        }
+        
+        .toc-link-container::after {
+            position: absolute;
+            padding-left: .25ch;
+            content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";
+            text-align: right;
+        }
+        
+        .page {
+            grid-area: page;
+            width: 30px;
+            text-align: right;
+        }
+        
+
+        .table-wrapper {
+            overflow: hidden;
+            box-sizing: border-box;
+            font: inherit;
+        }
+        
+
+        .tip {
+            background-color: rgba(25, 25, 28, .05);
+        }
+        
+
+        .topic {
+            page-break-before: always;
+        }
+        </style><title>pdfSourceIN</title></head><body><div><section class="topic"><div><article class="article"><h1 class="main-title">Table of Contents</h1><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#1539594266">Introducci&oacute;n a la algoritmia</a></div><div class="page">2</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-1307969986">Algebra Booleana</a></div><div class="page">4</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-1749467689">Pseudoc&oacute;digo</a></div><div class="page">7</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#757376421">Instrucciones de los algoritmos</a></div><div class="page">10</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-10410942">Operadores de los algoritmos</a></div><div class="page">13</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-1493968276">Diagramas de flujo</a></div><div class="page">15</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#964062011">Elementos de un diagrama de flujo</a></div><div class="page">17</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#1208131206">La condicional</a></div><div class="page">21</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-262542480">Ejemplo de uso de Condicionales</a></div><div class="page">26</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-889473228">En caso de (switch)</a></div><div class="page">31</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#28426946">Ejemplo de en caso de (switch)</a></div><div class="page">33</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#984373974">Estructuras Repetitivas</a></div><div class="page">38</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-1952590015">Ejemplos de Bucles</a></div><div class="page">43</div></div></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="1539594266">Introducci&oacute;n a la algoritmia</h1><p id="1539594266#jgd2ua_3">La algoritmia es una disciplina que estudia los algoritmos, es decir, los procedimientos sistem&aacute;ticos para resolver problemas. Un algoritmo es una secuencia finita de pasos que, partiendo de unos datos de entrada, produce unos datos de salida. Los algoritmos son la base de la inform&aacute;tica y de la programaci&oacute;n, y son fundamentales en la resoluci&oacute;n de problemas en la vida cotidiana.</p><section><h2 id="1539594266#caracter-sticas-de-los-algoritmos" data-toc="caracter-sticas-de-los-algoritmos#introduction.md-caracter-sticas-de-los-algoritmos">Caracter&iacute;sticas de los algoritmos</h2><p id="1539594266#jgd2ua_7">Los algoritmos tienen las siguientes caracter&iacute;sticas:</p><ul class="list" id="1539594266#jgd2ua_8" start="1"><li class="list-item" id="1539594266#jgd2ua_9"><p><span class="control" id="1539594266#jgd2ua_14">Preciso</span>: Los algoritmos deben ser precisos y no ambiguos, es decir, deben describir claramente los pasos a seguir para resolver un problema.</p></li><li class="list-item" id="1539594266#jgd2ua_10"><p><span class="control" id="1539594266#jgd2ua_15">Finito</span>: Los algoritmos deben ser finitos, es decir, deben terminar en un n&uacute;mero finito de pasos.</p></li><li class="list-item" id="1539594266#jgd2ua_11"><p><span class="control" id="1539594266#jgd2ua_16">Definido</span>: Los algoritmos deben ser definidos, es decir, deben tener un n&uacute;mero finito de pasos bien definidos.</p></li><li class="list-item" id="1539594266#jgd2ua_12"><p><span class="control" id="1539594266#jgd2ua_17">Entrada</span>: Los algoritmos deben tener unos datos de entrada, que son los datos con los que se inicia el proceso.</p></li><li class="list-item" id="1539594266#jgd2ua_13"><p><span class="control" id="1539594266#jgd2ua_18">Salida</span>: Los algoritmos deben tener unos datos de salida, que son los resultados obtenidos al final del proceso.</p></li></ul></section><section><h2 id="1539594266#elementos-de-un-algoritmo" data-toc="elementos-de-un-algoritmo#introduction.md-elementos-de-un-algoritmo">Elementos de un algoritmo</h2><p id="1539594266#jgd2ua_19">Los elementos b&aacute;sicos de un algoritmo son los siguientes:</p><ul class="list" id="1539594266#jgd2ua_20" start="1"><li class="list-item" id="1539594266#jgd2ua_21"><p>** Entrada de datos **: Los datos de entrada son los valores que se utilizan para iniciar el proceso. Por ejemplo, si queremos calcular el &aacute;rea de un c&iacute;rculo, el radio ser&iacute;a un dato de entrada.</p></li><li class="list-item" id="1539594266#jgd2ua_22"><p>** Proceso **: El proceso es la secuencia de pasos que se deben seguir para resolver el problema. Por ejemplo, para calcular el &aacute;rea de un c&iacute;rculo, se debe multiplicar el radio por s&iacute; mismo y por el valor de pi.</p></li><li class="list-item" id="1539594266#jgd2ua_23"><p>** Salida de datos **: Los datos de salida son los resultados obtenidos al final del proceso. Por ejemplo, el &aacute;rea calculada del c&iacute;rculo ser&iacute;a un dato de salida.</p></li></ul></section><section><h2 id="1539594266#ejemplo-de-algoritmo" data-toc="ejemplo-de-algoritmo#introduction.md-ejemplo-de-algoritmo">Ejemplo de algoritmo</h2><p id="1539594266#jgd2ua_24">A continuaci&oacute;n, se muestra un ejemplo de un algoritmo que calcula el &aacute;rea de un c&iacute;rculo a partir de su radio:</p><div class="detached code-block" id="1539594266#jgd2ua_25"><pre><code class="language-none">Nombre del algoritmo: Calcular área de un círculo
+Definición de constantes:
+    Real: PI = 3.1416
+Definición de variables:
+    Real: radio, area
+Algoritmo:
+    1. Inicio
+    2. Escribir &quot;Ingrese el radio del círculo:&quot;
+    3. Leer radio 
+    4. Hacer area = PI * radio * radio
+    5. Escribir &quot;El área del círculo es:&quot;, area
+    6. Fin</code></pre></div><p id="1539594266#jgd2ua_26">En este ejemplo, <span class="inline-code" id="1539594266#jgd2ua_27">PI</span> es una constante que representa el valor de pi, <span class="inline-code" id="1539594266#jgd2ua_28">radio</span> es la variable que almacena el radio del c&iacute;rculo y <span class="inline-code" id="1539594266#jgd2ua_29">area</span> es la variable que almacena el &aacute;rea calculada. Las instrucciones <span class="inline-code" id="1539594266#jgd2ua_30">Escribir</span> y <span class="inline-code" id="1539594266#jgd2ua_31">Leer</span> se utilizan para mostrar mensajes en pantalla y leer valores del usuario, respectivamente.</p></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-1307969986">Algebra Booleana</h1><p id="-1307969986#qjlegu_3">La <span class="control" id="-1307969986#qjlegu_8">&aacute;lgebra booleana</span> es una rama de la matem&aacute;tica y la l&oacute;gica que trata de las operaciones l&oacute;gicas y aritm&eacute;ticas en los valores binarios 0 y 1. Fue inventada por George Boole en el siglo XIX como un sistema de l&oacute;gica para modelar el razonamiento humano. La &aacute;lgebra booleana es fundamental para la inform&aacute;tica y la electr&oacute;nica digital, ya que se utiliza para dise&ntilde;ar circuitos digitales y programaci&oacute;n de computadoras.</p><section><h2 id="-1307969986#operaciones-b-sicas" data-toc="operaciones-b-sicas#algebra-booleana.md-operaciones-b-sicas">Operaciones b&aacute;sicas</h2><p id="-1307969986#qjlegu_9">Las operaciones b&aacute;sicas de la &aacute;lgebra booleana son las siguientes:</p><div class="table-wrapper detached"><table id="-1307969986#qjlegu_10"><tr class="header-row" id="-1307969986#qjlegu_11"><th id="-1307969986#qjlegu_15"><p>Operaci&oacute;n</p></th><th id="-1307969986#qjlegu_16"><p>Descripci&oacute;n</p></th><th id="-1307969986#qjlegu_17"><p>S&iacute;mbolo</p></th></tr><tr class="" id="-1307969986#qjlegu_12"><td id="-1307969986#qjlegu_18"><p><span class="control" id="-1307969986#qjlegu_21">Negaci&oacute;n</span></p></td><td id="-1307969986#qjlegu_19"><p>Invierte el valor de una variable</p></td><td id="-1307969986#qjlegu_20"><p><span class="inline-code" id="-1307969986#qjlegu_22">!</span></p></td></tr><tr class="" id="-1307969986#qjlegu_13"><td id="-1307969986#qjlegu_23"><p><span class="control" id="-1307969986#qjlegu_26">Conjunci&oacute;n</span></p></td><td id="-1307969986#qjlegu_24"><p>Devuelve verdadero si ambas variables son verdaderas</p></td><td id="-1307969986#qjlegu_25"><p><span class="inline-code" id="-1307969986#qjlegu_27">&amp;&amp;</span></p></td></tr><tr class="" id="-1307969986#qjlegu_14"><td id="-1307969986#qjlegu_28"><p><span class="control" id="-1307969986#qjlegu_31">Disyunci&oacute;n</span></p></td><td id="-1307969986#qjlegu_29"><p>Devuelve verdadero si al menos una de las variables es verdadera</p></td><td id="-1307969986#qjlegu_30"><p><span class="inline-code" id="-1307969986#qjlegu_32">       ||</span></p></td></tr></table></div></section><section><h2 id="-1307969986#leyes-de-la-lgebra-booleana" data-toc="leyes-de-la-lgebra-booleana#algebra-booleana.md-leyes-de-la-lgebra-booleana">Leyes de la &aacute;lgebra booleana</h2><p id="-1307969986#qjlegu_33">Las leyes del &aacute;lgebra booleana son reglas que se utilizan para simplificar y manipular expresiones booleanas. Las principales leyes del &aacute;lgebra booleana son las siguientes:</p><ol class="list list-decimal" id="-1307969986#qjlegu_34" type="1" start="1"><li class="list-item" id="-1307969986#qjlegu_35"><p><span class="control" id="-1307969986#qjlegu_42">Ley de la identidad</span>: <span class="inline-code" id="-1307969986#qjlegu_43">A + 0 = A</span> y <span class="inline-code" id="-1307969986#qjlegu_44">A * 1 = A</span></p></li><li class="list-item" id="-1307969986#qjlegu_36"><p><span class="control" id="-1307969986#qjlegu_45">Ley de la dominancia</span>: <span class="inline-code" id="-1307969986#qjlegu_46">A + 1 = 1</span> y <span class="inline-code" id="-1307969986#qjlegu_47">A * 0 = 0</span></p></li><li class="list-item" id="-1307969986#qjlegu_37"><p><span class="control" id="-1307969986#qjlegu_48">Ley de la idempotencia</span>: <span class="inline-code" id="-1307969986#qjlegu_49">A + A = A</span> y <span class="inline-code" id="-1307969986#qjlegu_50">A * A = A</span></p></li><li class="list-item" id="-1307969986#qjlegu_38"><p><span class="control" id="-1307969986#qjlegu_51">Ley de la complementaci&oacute;n</span>: <span class="inline-code" id="-1307969986#qjlegu_52">A + !A = 1</span> y <span class="inline-code" id="-1307969986#qjlegu_53">A * !A = 0</span></p></li><li class="list-item" id="-1307969986#qjlegu_39"><p><span class="control" id="-1307969986#qjlegu_54">Ley de la absorci&oacute;n</span>: <span class="inline-code" id="-1307969986#qjlegu_55">A + A * B = A</span> y <span class="inline-code" id="-1307969986#qjlegu_56">A * (A + B) = A</span></p></li><li class="list-item" id="-1307969986#qjlegu_40"><p><span class="control" id="-1307969986#qjlegu_57">Ley de la distribuci&oacute;n</span>: <span class="inline-code" id="-1307969986#qjlegu_58">A * (B + C) = A * B + A * C</span> y <span class="inline-code" id="-1307969986#qjlegu_59">A + B * C = (A + B) * (A + C)</span></p></li><li class="list-item" id="-1307969986#qjlegu_41"><p><span class="control" id="-1307969986#qjlegu_60">Ley de De Morgan</span>: <span class="inline-code" id="-1307969986#qjlegu_61">!(A * B) = !A + !B</span> y <span class="inline-code" id="-1307969986#qjlegu_62">!(A + B) = !A * !B</span></p></li></ol></section><section><h2 id="-1307969986#tablas-de-verdad" data-toc="tablas-de-verdad#algebra-booleana.md-tablas-de-verdad">Tablas de verdad</h2><p id="-1307969986#qjlegu_63">Una <span class="control" id="-1307969986#qjlegu_66">tabla de verdad</span> es una representaci&oacute;n visual de todas las posibles combinaciones de valores de las variables en una expresi&oacute;n booleana y el resultado de la operaci&oacute;n.</p><p id="-1307969986#qjlegu_64">La tabla de verdad general es la siguiente:</p><div class="table-wrapper detached"><table id="-1307969986#qjlegu_65"><tr class="header-row" id="-1307969986#qjlegu_67"><th id="-1307969986#qjlegu_72"><p>A</p></th><th id="-1307969986#qjlegu_73"><p>B</p></th><th id="-1307969986#qjlegu_74"><p>A &amp;&amp; B</p></th><th id="-1307969986#qjlegu_75"><p><span class="inline-code" id="-1307969986#qjlegu_77">A || B</span></p></th><th id="-1307969986#qjlegu_76"><p>!A</p></th></tr><tr class="" id="-1307969986#qjlegu_68"><td id="-1307969986#qjlegu_78"><p>0</p></td><td id="-1307969986#qjlegu_79"><p>0</p></td><td id="-1307969986#qjlegu_80"><p>0</p></td><td id="-1307969986#qjlegu_81"><p>0</p></td><td id="-1307969986#qjlegu_82"><p>1</p></td></tr><tr class="" id="-1307969986#qjlegu_69"><td id="-1307969986#qjlegu_83"><p>0</p></td><td id="-1307969986#qjlegu_84"><p>1</p></td><td id="-1307969986#qjlegu_85"><p>0</p></td><td id="-1307969986#qjlegu_86"><p>1</p></td><td id="-1307969986#qjlegu_87"><p>1</p></td></tr><tr class="" id="-1307969986#qjlegu_70"><td id="-1307969986#qjlegu_88"><p>1</p></td><td id="-1307969986#qjlegu_89"><p>0</p></td><td id="-1307969986#qjlegu_90"><p>0</p></td><td id="-1307969986#qjlegu_91"><p>1</p></td><td id="-1307969986#qjlegu_92"><p>0</p></td></tr><tr class="" id="-1307969986#qjlegu_71"><td id="-1307969986#qjlegu_93"><p>1</p></td><td id="-1307969986#qjlegu_94"><p>1</p></td><td id="-1307969986#qjlegu_95"><p>1</p></td><td id="-1307969986#qjlegu_96"><p>1</p></td><td id="-1307969986#qjlegu_97"><p>0</p></td></tr></table></div></section><section><h2 id="-1307969986#aplicaci-n-en-algoritmos" data-toc="aplicaci-n-en-algoritmos#algebra-booleana.md-aplicaci-n-en-algoritmos">Aplicaci&oacute;n en algoritmos</h2><p id="-1307969986#qjlegu_98">La &aacute;lgebra booleana se utiliza en algoritmos para realizar operaciones l&oacute;gicas y de comparaci&oacute;n. Por ejemplo, en un algoritmo de b&uacute;squeda se puede utilizar la operaci&oacute;n de conjunci&oacute;n para verificar si dos condiciones son verdaderas</p><div class="detached code-block" id="-1307969986#qjlegu_99"><pre><code class="language-none">1. Inicio
+2. Leer x, y
+3. Si x &gt; 0 &amp;&amp; y &gt; 0
+4.     Escribir &quot;Ambos números son positivos&quot;
+5. Sino
+6.     Escribir &quot;Al menos uno de los números es negativo&quot;
+7. Fin</code></pre></div><p id="-1307969986#qjlegu_100">En este ejemplo, la operaci&oacute;n <span class="inline-code" id="-1307969986#qjlegu_102">x &gt; 0 &amp;&amp; y &gt; 0</span> verifica si tanto <span class="inline-code" id="-1307969986#qjlegu_103">x</span> como <span class="inline-code" id="-1307969986#qjlegu_104">y</span> son mayores que cero, y en caso afirmativo muestra un mensaje en pantalla. Si al menos uno de los n&uacute;meros es negativo, se muestra otro mensaje.</p><p id="-1307969986#qjlegu_101">El algebra booleana es una herramienta poderosa para la programaci&oacute;n y la l&oacute;gica, ya que permite realizar operaciones l&oacute;gicas y de comparaci&oacute;n de manera eficiente y precisa.</p></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-1749467689">Pseudoc&oacute;digo</h1><p id="-1749467689#yzj64l_3">El pseudoc&oacute;digo es una forma de representar algoritmos de manera que sean f&aacute;ciles de entender y de traducir a un lenguaje de programaci&oacute;n. Aunque no es un lenguaje de programaci&oacute;n en s&iacute; mismo, el pseudoc&oacute;digo es una herramienta muy &uacute;til para planificar y dise&ntilde;ar programas antes de escribir el c&oacute;digo en un lenguaje de programaci&oacute;n espec&iacute;fico.</p><section><h2 id="-1749467689#estructura-del-pseudoc-digo" data-toc="estructura-del-pseudoc-digo#pseudocodigo.md-estructura-del-pseudoc-digo">Estructura del pseudoc&oacute;digo</h2><p id="-1749467689#yzj64l_7">El pseudoc&oacute;digo se compone de una serie de instrucciones que describen paso a paso lo que debe hacer un programa. Estas instrucciones se organizan en bloques de c&oacute;digo que representan las diferentes partes del algoritmo. Cada bloque de c&oacute;digo se inicia con una palabra clave que indica el tipo de instrucci&oacute;n que se va a realizar, seguida de una descripci&oacute;n detallada de la operaci&oacute;n que se va a llevar a cabo.</p><p id="-1749467689#yzj64l_8">La estructura que usaremos y que debe de seguir el pseudoc&oacute;digo es la siguiente:</p><div class="detached code-block" id="-1749467689#yzj64l_9"><pre><code class="language-none">Nombre del algoritmo: &lt;&lt;Nombre del algoritmo&gt;&gt;
+Definición de constantes:
+    Tipo de Dato: &lt;&lt;Nombre de la constante&gt;&gt; = &lt;&lt;Valor de la constante&gt;&gt;
+Definición de variables:
+    Tipo de Dato: &lt;&lt;Nombre de la variable&gt;&gt;
+1. Inicio
+2. &lt;&lt;Instrucciones&gt;&gt;
+.
+.
+n. Fin</code></pre></div></section><section><h2 id="-1749467689#tipos-de-datos" data-toc="tipos-de-datos#pseudocodigo.md-tipos-de-datos">Tipos de datos</h2><p id="-1749467689#yzj64l_10">Los tipos de datos que podemos utilizar en el pseudoc&oacute;digo son los mismos que en la mayor&iacute;a de los lenguajes de programaci&oacute;n, y nos permiten almacenar diferentes tipos de informaci&oacute;n, como n&uacute;meros, texto, fechas, etc. Algunos de los tipos de datos m&aacute;s comunes son:</p><div class="table-wrapper detached"><table id="-1749467689#yzj64l_11"><tr class="header-row" id="-1749467689#yzj64l_12"><th id="-1749467689#yzj64l_18"><p>Tipo de Dato</p></th><th id="-1749467689#yzj64l_19"><p>Descripci&oacute;n</p></th></tr><tr class="" id="-1749467689#yzj64l_13"><td id="-1749467689#yzj64l_20"><p>Entero</p></td><td id="-1749467689#yzj64l_21"><p>N&uacute;meros enteros, positivos o negativos</p></td></tr><tr class="" id="-1749467689#yzj64l_14"><td id="-1749467689#yzj64l_22"><p>Real</p></td><td id="-1749467689#yzj64l_23"><p>N&uacute;meros con decimales</p></td></tr><tr class="" id="-1749467689#yzj64l_15"><td id="-1749467689#yzj64l_24"><p>Car&aacute;cter</p></td><td id="-1749467689#yzj64l_25"><p>Letras, n&uacute;meros o s&iacute;mbolos</p></td></tr><tr class="" id="-1749467689#yzj64l_16"><td id="-1749467689#yzj64l_26"><p>Cadena</p></td><td id="-1749467689#yzj64l_27"><p>Conjunto de caracteres</p></td></tr><tr class="" id="-1749467689#yzj64l_17"><td id="-1749467689#yzj64l_28"><p>L&oacute;gico</p></td><td id="-1749467689#yzj64l_29"><p>Valores verdadero o falso</p></td></tr></table></div></section><section><h2 id="-1749467689#ejemplo-de-pseudoc-digo" data-toc="ejemplo-de-pseudoc-digo#pseudocodigo.md-ejemplo-de-pseudoc-digo">Ejemplo de pseudoc&oacute;digo</h2><p id="-1749467689#yzj64l_30">A continuaci&oacute;n, se muestra un ejemplo de pseudoc&oacute;digo que calcula el &aacute;rea de un c&iacute;rculo a partir de su radio:</p><div class="detached code-block" id="-1749467689#yzj64l_31"><pre><code class="language-none">Nombre del algoritmo: Calcular área de un círculo
+Definición de constantes:
+    Real: PI = 3.1416
+Definición de variables:
+    Real: radio, area
+1. Inicio
+2. Escribir &quot;Ingrese el radio del círculo:&quot;
+3. Leer radio
+4. Hcer area = PI * radio * radio
+5. Escribir &quot;El área del círculo es:&quot;, area
+6. Fin</code></pre></div><blockquote class="prompt flex bordered-element-rounded tip detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p id="-1749467689#yzj64l_34"><span class="control" id="-1749467689#yzj64l_35">Nota:</span> En este ejemplo, <span class="inline-code" id="-1749467689#yzj64l_36">PI</span> es una constante que representa el valor de pi, <span class="inline-code" id="-1749467689#yzj64l_37">radio</span> es la variable que almacena el radio del c&iacute;rculo y <span class="inline-code" id="-1749467689#yzj64l_38">area</span> es la variable que almacena el &aacute;rea calculada. Las instrucciones <span class="inline-code" id="-1749467689#yzj64l_39">Escribir</span> y <span class="inline-code" id="-1749467689#yzj64l_40">Leer</span> se utilizan para mostrar mensajes en pantalla y leer valores del usuario, respectivamente.</p></div>
+</blockquote>
+<blockquote class="prompt flex bordered-element-rounded tip detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p id="-1749467689#yzj64l_41"><span class="control" id="-1749467689#yzj64l_42">Nota:</span> Para efectos de las constantes, estas siempre se escribir&aacute;n en may&uacute;sculas y se les asignar&aacute; un valor que no cambiar&aacute; durante la ejecuci&oacute;n del algoritmo. Por su parte, las variables se escribir&aacute;n en min&uacute;sculas y se les asignar&aacute; un valor que puede cambiar durante la ejecuci&oacute;n del algoritmo.</p></div>
+</blockquote>
+</section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="757376421">Instrucciones de los algoritmos</h1><p id="757376421#-rqz6ix_3">Para los algoritmos tenemos las siguientes instrucciones:</p><ol class="list list-decimal" id="757376421#-rqz6ix_4" type="1" start="1"><li class="list-item" id="757376421#-rqz6ix_9"><p><span class="control" id="757376421#-rqz6ix_13">Inicio/Fin</span>: Marca el inicio y el fin del algoritmo.</p></li><li class="list-item" id="757376421#-rqz6ix_10"><p><span class="control" id="757376421#-rqz6ix_14">Leer</span>: Permite leer alg&uacute;n dato y almacenarlo dentro de una variable para su posterior uso.</p></li><li class="list-item" id="757376421#-rqz6ix_11"><p><span class="control" id="757376421#-rqz6ix_15">Escribir</span>: Permite mostrar en pantalla alg&uacute;n dato.</p></li><li class="list-item" id="757376421#-rqz6ix_12"><p><span class="control" id="757376421#-rqz6ix_16">Hacer</span>: Permite asignar un valor a una variable, ya sea simple o mediante alg&uacute;n c&aacute;lculo.</p></li></ol><section><h2 id="757376421#ejemplo-1" data-toc="ejemplo-1#instructions.md-ejemplo-1">Ejemplo 1</h2><div class="detached code-block" id="757376421#-rqz6ix_17"><pre><code class="language-none">Nombre del algoritmo: SumaDeNumeros
+Definición de variables:
+    Entero: num1, num2, suma
+Algoritmo:
+    1. Inicio
+    2. Leer num1
+    3. Leer num2
+    4. Hacer suma = num1 + num2
+    5. Escribir suma
+    6. Fin</code></pre></div><p id="757376421#-rqz6ix_18">Otro ejemplo ser&iacute;a el siguiente:</p><div class="detached code-block" id="757376421#-rqz6ix_19"><pre><code class="language-none">Nombre del algoritmo: AreaDeUnCírculo
+Definición de constantes:
+    Real: PI = 3.1416
+Definición de variables:
+    Real: radio, area
+Algoritmo:
+    1. Inicio
+    2. Leer radio
+    3. Hacer area = PI * radio * radio
+    4. Escribir area
+    5. Fin</code></pre></div></section><section><h2 id="757376421#leer-y-escribir" data-toc="leer-y-escribir#instructions.md-leer-y-escribir">Leer y Escribir</h2><p id="757376421#-rqz6ix_20">La instrucci&oacute;n <span class="inline-code" id="757376421#-rqz6ix_26">Leer</span> se utiliza para obtener un valor del usuario y almacenarlo en una variable, mientras que la instrucci&oacute;n <span class="inline-code" id="757376421#-rqz6ix_27">Escribir</span> se utiliza para mostrar un valor en pantalla. Estas instrucciones son fundamentales para la interacci&oacute;n con el usuario y para la visualizaci&oacute;n de resultados.</p><p id="757376421#-rqz6ix_21">Ambas instrucciones pueden usarse para leer o escribir m&aacute;s de una variable o texto, separ&aacute;ndolos por comas. Por ejemplo:</p><div class="detached code-block" id="757376421#-rqz6ix_22"><pre><code class="language-none">Leer a, b, c
+Escribir &quot;El resultado es:&quot;, resultado</code></pre></div><p id="757376421#-rqz6ix_23">En este caso, se leen tres valores y se almacenan en las variables <span class="inline-code" id="757376421#-rqz6ix_28">a</span>, <span class="inline-code" id="757376421#-rqz6ix_29">b</span> y <span class="inline-code" id="757376421#-rqz6ix_30">c</span>, y luego se muestra en pantalla el mensaje &quot;El resultado es:&quot; seguido del valor de la variable <span class="inline-code" id="757376421#-rqz6ix_31">resultado</span>.</p><blockquote class="prompt flex bordered-element-rounded tip detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p id="757376421#-rqz6ix_32"><span class="control" id="757376421#-rqz6ix_33">Nota:</span> Es importante tener en cuenta que las instrucciones <span class="inline-code" id="757376421#-rqz6ix_34">Leer</span> y <span class="inline-code" id="757376421#-rqz6ix_35">Escribir</span> son espec&iacute;ficas de pseudoc&oacute;digo y pueden variar en otros lenguajes de programaci&oacute;n.</p></div>
+</blockquote>
+<blockquote class="prompt flex bordered-element-rounded tip detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p id="757376421#-rqz6ix_36"><span class="control" id="757376421#-rqz6ix_37">Nota:</span> Ambas instrucciones dependen de la definici&oacute;n de variables antes de poder usarlas, en otras palabras, las variables deben ser declaradas antes de poder ser utilizadas en las instrucciones <span class="inline-code" id="757376421#-rqz6ix_38">Leer</span> y <span class="inline-code" id="757376421#-rqz6ix_39">Escribir</span>.</p></div>
+</blockquote>
+</section><section><h2 id="757376421#hacer" data-toc="hacer#instructions.md-hacer">Hacer</h2><p id="757376421#-rqz6ix_40">La instrucci&oacute;n <span class="inline-code" id="757376421#-rqz6ix_46">Hacer</span> se utiliza para asignar un valor a una variable, ya sea un valor simple o el resultado de una operaci&oacute;n matem&aacute;tica. Por ejemplo:</p><div class="detached code-block" id="757376421#-rqz6ix_41"><pre><code class="language-none">Hacer suma = num1 + num2</code></pre></div><p id="757376421#-rqz6ix_42">En este caso, se asigna a la variable <span class="inline-code" id="757376421#-rqz6ix_47">suma</span> la suma de los valores almacenados en las variables <span class="inline-code" id="757376421#-rqz6ix_48">num1</span> y <span class="inline-code" id="757376421#-rqz6ix_49">num2</span>.</p><p id="757376421#-rqz6ix_43">La instrucci&oacute;n <span class="inline-code" id="757376421#-rqz6ix_50">Hacer</span> es fundamental para realizar c&aacute;lculos y operaciones en un algoritmo, ya que permite manipular los valores almacenados en las variables y realizar operaciones matem&aacute;ticas con ellos.</p><blockquote class="prompt flex bordered-element-rounded tip detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p id="757376421#-rqz6ix_51"><span class="control" id="757376421#-rqz6ix_52">Nota:</span> La instrucci&oacute;n <span class="inline-code" id="757376421#-rqz6ix_53">Hacer</span> puede utilizarse para asignar valores a variables de diferentes tipos de datos, como enteros, reales, caracteres, etc.</p></div>
+</blockquote>
+<blockquote class="prompt flex bordered-element-rounded tip detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p id="757376421#-rqz6ix_54"><span class="control" id="757376421#-rqz6ix_55">Nota:</span> La instrucci&oacute;n <span class="inline-code" id="757376421#-rqz6ix_56">Hacer</span> tambi&eacute;n puede utilizarse para asignar valores arbitrarios a variables, como por ejemplo <span class="inline-code" id="757376421#-rqz6ix_57">Hacer x = 10</span>, donde se asigna el valor 10 a la variable <span class="inline-code" id="757376421#-rqz6ix_58">x</span>.</p></div>
+</blockquote>
+</section><section><h2 id="757376421#ejemplo-2" data-toc="ejemplo-2#instructions.md-ejemplo-2">Ejemplo 2</h2><p id="757376421#-rqz6ix_59">A continuaci&oacute;n, se muestra un ejemplo de un algoritmo que calcula el &aacute;rea de un tri&aacute;ngulo a partir de su base y altura:</p><div class="detached code-block" id="757376421#-rqz6ix_60"><pre><code class="language-none">Nombre del algoritmo: CalcularAreaTriangulo
+Definición de variables:
+    Real: base, altura, area
+Algoritmo:
+    1. Inicio
+    2. Leer base
+    3. Leer altura
+    4. Hacer area = (base * altura) / 2
+    5. Escribir &quot;El área del triángulo es:&quot;, area
+    6. Fin</code></pre></div></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-10410942">Operadores de los algoritmos</h1><p id="-10410942#-3qxmu_3">Los operadores son s&iacute;mbolos que permiten realizar operaciones matem&aacute;ticas, l&oacute;gicas y de comparaci&oacute;n. En los algoritmos se utilizan los siguientes operadores:</p><ol class="list list-decimal" id="-10410942#-3qxmu_4" type="1" start="1"><li class="list-item" id="-10410942#-3qxmu_8"><p><span class="control" id="-10410942#-3qxmu_11">Aritm&eacute;ticos</span>: Permiten realizar operaciones matem&aacute;ticas.</p></li><li class="list-item" id="-10410942#-3qxmu_9"><p><span class="control" id="-10410942#-3qxmu_12">Relacionales</span>: Permiten comparar dos valores.</p></li><li class="list-item" id="-10410942#-3qxmu_10"><p><span class="control" id="-10410942#-3qxmu_13">L&oacute;gicos</span>: Permiten realizar operaciones l&oacute;gicas.</p></li></ol><section><h2 id="-10410942#operadores-aritm-ticos" data-toc="operadores-aritm-ticos#operadores.md-operadores-aritm-ticos">Operadores aritm&eacute;ticos</h2><p id="-10410942#-3qxmu_14">Los operadores aritm&eacute;ticos son los siguientes:</p><div class="table-wrapper detached"><table id="-10410942#-3qxmu_15"><tr class="header-row" id="-10410942#-3qxmu_16"><th id="-10410942#-3qxmu_25"><p>Operador</p></th><th id="-10410942#-3qxmu_26"><p>Descripci&oacute;n</p></th><th id="-10410942#-3qxmu_27"><p>Ejemplo</p></th></tr><tr class="" id="-10410942#-3qxmu_17"><td id="-10410942#-3qxmu_28"><p><span class="inline-code" id="-10410942#-3qxmu_31">+</span></p></td><td id="-10410942#-3qxmu_29"><p>Suma</p></td><td id="-10410942#-3qxmu_30"><p><span class="inline-code" id="-10410942#-3qxmu_32">a + b</span></p></td></tr><tr class="" id="-10410942#-3qxmu_18"><td id="-10410942#-3qxmu_33"><p><span class="inline-code" id="-10410942#-3qxmu_36">-</span></p></td><td id="-10410942#-3qxmu_34"><p>Resta</p></td><td id="-10410942#-3qxmu_35"><p><span class="inline-code" id="-10410942#-3qxmu_37">a - b</span></p></td></tr><tr class="" id="-10410942#-3qxmu_19"><td id="-10410942#-3qxmu_38"><p><span class="inline-code" id="-10410942#-3qxmu_41">*</span></p></td><td id="-10410942#-3qxmu_39"><p>Multiplicaci&oacute;n</p></td><td id="-10410942#-3qxmu_40"><p><span class="inline-code" id="-10410942#-3qxmu_42">a * b</span></p></td></tr><tr class="" id="-10410942#-3qxmu_20"><td id="-10410942#-3qxmu_43"><p><span class="inline-code" id="-10410942#-3qxmu_46">/</span></p></td><td id="-10410942#-3qxmu_44"><p>Divisi&oacute;n</p></td><td id="-10410942#-3qxmu_45"><p><span class="inline-code" id="-10410942#-3qxmu_47">a / b</span></p></td></tr><tr class="" id="-10410942#-3qxmu_21"><td id="-10410942#-3qxmu_48"><p><span class="inline-code" id="-10410942#-3qxmu_51">%</span></p></td><td id="-10410942#-3qxmu_49"><p>M&oacute;dulo</p></td><td id="-10410942#-3qxmu_50"><p><span class="inline-code" id="-10410942#-3qxmu_52">a % b</span></p></td></tr><tr class="" id="-10410942#-3qxmu_22"><td id="-10410942#-3qxmu_53"><p><span class="inline-code" id="-10410942#-3qxmu_56">++</span></p></td><td id="-10410942#-3qxmu_54"><p>Incremento</p></td><td id="-10410942#-3qxmu_55"><p><span class="inline-code" id="-10410942#-3qxmu_57">a++</span></p></td></tr><tr class="" id="-10410942#-3qxmu_23"><td id="-10410942#-3qxmu_58"><p><span class="inline-code" id="-10410942#-3qxmu_61">--</span></p></td><td id="-10410942#-3qxmu_59"><p>Decremento</p></td><td id="-10410942#-3qxmu_60"><p><span class="inline-code" id="-10410942#-3qxmu_62">a--</span></p></td></tr><tr class="" id="-10410942#-3qxmu_24"><td id="-10410942#-3qxmu_63"><p>^</p></td><td id="-10410942#-3qxmu_64"><p>Potencia</p></td><td id="-10410942#-3qxmu_65"><p><span class="inline-code" id="-10410942#-3qxmu_66">a ^ b</span></p></td></tr></table></div></section><section><h2 id="-10410942#operadores-relacionales" data-toc="operadores-relacionales#operadores.md-operadores-relacionales">Operadores relacionales</h2><p id="-10410942#-3qxmu_67">Los operadores relacionales son los siguientes:</p><div class="table-wrapper detached"><table id="-10410942#-3qxmu_68"><tr class="header-row" id="-10410942#-3qxmu_69"><th id="-10410942#-3qxmu_77"><p>Operador</p></th><th id="-10410942#-3qxmu_78"><p>Descripci&oacute;n</p></th><th id="-10410942#-3qxmu_79"><p>Ejemplo</p></th></tr><tr class="" id="-10410942#-3qxmu_70"><td id="-10410942#-3qxmu_80"><p><span class="inline-code" id="-10410942#-3qxmu_83">==</span></p></td><td id="-10410942#-3qxmu_81"><p>Igual a</p></td><td id="-10410942#-3qxmu_82"><p><span class="inline-code" id="-10410942#-3qxmu_84">a == b</span></p></td></tr><tr class="" id="-10410942#-3qxmu_71"><td id="-10410942#-3qxmu_85"><p><span class="inline-code" id="-10410942#-3qxmu_88">!=</span> o <span class="inline-code" id="-10410942#-3qxmu_89">&lt;&gt;</span></p></td><td id="-10410942#-3qxmu_86"><p>Diferente de</p></td><td id="-10410942#-3qxmu_87"><p><span class="inline-code" id="-10410942#-3qxmu_90">a != b</span></p></td></tr><tr class="" id="-10410942#-3qxmu_72"><td id="-10410942#-3qxmu_91"><p><span class="inline-code" id="-10410942#-3qxmu_94">&gt;</span></p></td><td id="-10410942#-3qxmu_92"><p>Mayor que</p></td><td id="-10410942#-3qxmu_93"><p>`a &gt; b</p></td></tr><tr class="" id="-10410942#-3qxmu_73"><td id="-10410942#-3qxmu_95"><p><span class="inline-code" id="-10410942#-3qxmu_98">&lt;</span></p></td><td id="-10410942#-3qxmu_96"><p>Menor que</p></td><td id="-10410942#-3qxmu_97"><p><span class="inline-code" id="-10410942#-3qxmu_99">a &lt; b</span></p></td></tr><tr class="" id="-10410942#-3qxmu_74"><td id="-10410942#-3qxmu_100"><p><span class="inline-code" id="-10410942#-3qxmu_103">&gt;=</span></p></td><td id="-10410942#-3qxmu_101"><p>Mayor o igual</p></td><td id="-10410942#-3qxmu_102"><p><span class="inline-code" id="-10410942#-3qxmu_104">a &gt;= b</span></p></td></tr><tr class="" id="-10410942#-3qxmu_75"><td id="-10410942#-3qxmu_105"><p><span class="inline-code" id="-10410942#-3qxmu_108">&lt;=</span></p></td><td id="-10410942#-3qxmu_106"><p>Menor o igual</p></td><td id="-10410942#-3qxmu_107"><p><span class="inline-code" id="-10410942#-3qxmu_109">a &lt;= b</span></p></td></tr><tr class="" id="-10410942#-3qxmu_76"><td id="-10410942#-3qxmu_110"><p>!</p></td><td id="-10410942#-3qxmu_111"><p>Negaci&oacute;n</p></td><td id="-10410942#-3qxmu_112"><p><span class="inline-code" id="-10410942#-3qxmu_113">!a</span></p></td></tr></table></div></section><section><h2 id="-10410942#operadores-l-gicos" data-toc="operadores-l-gicos#operadores.md-operadores-l-gicos">Operadores l&oacute;gicos</h2><p id="-10410942#-3qxmu_114">Los operadores l&oacute;gicos son los siguientes:</p><div class="table-wrapper detached"><table id="-10410942#-3qxmu_115"><tr class="header-row" id="-10410942#-3qxmu_116"><th id="-10410942#-3qxmu_119"><p>Operador</p></th><th id="-10410942#-3qxmu_120"><p>Descripci&oacute;n</p></th><th id="-10410942#-3qxmu_121"><p>Ejemplo</p></th></tr><tr class="" id="-10410942#-3qxmu_117"><td id="-10410942#-3qxmu_122"><p><span class="inline-code" id="-10410942#-3qxmu_125">&amp;&amp;</span></p></td><td id="-10410942#-3qxmu_123"><p>Y</p></td><td id="-10410942#-3qxmu_124"><p><span class="inline-code" id="-10410942#-3qxmu_126">a &amp;&amp; b</span></p></td></tr><tr class="" id="-10410942#-3qxmu_118"><td id="-10410942#-3qxmu_127"><p><span class="inline-code" id="-10410942#-3qxmu_130">||</span></p></td><td id="-10410942#-3qxmu_128"><p>O</p></td><td id="-10410942#-3qxmu_129"><p><span class="inline-code" id="-10410942#-3qxmu_131">a || b</span></p></td></tr></table></div></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-1493968276">Diagramas de flujo</h1><p id="-1493968276#-wljt1a_3">Los diagramas de flujo son una herramienta visual que se utiliza para representar algoritmos y procesos de forma gr&aacute;fica. Los diagramas de flujo son una forma eficaz de comunicar ideas y procesos complejos de una manera clara y concisa.</p><section><h2 id="-1493968276#elementos-de-un-diagrama-de-flujo" data-toc="elementos-de-un-diagrama-de-flujo#diagramas-flujo.md-elementos-de-un-diagrama-de-flujo">Elementos de un diagrama de flujo</h2><p id="-1493968276#-wljt1a_5">Los diagramas de flujo est&aacute;n compuestos por una serie de elementos que representan diferentes partes de un algoritmo o proceso. Algunos de los elementos m&aacute;s comunes de un diagrama de flujo son:</p><ol class="list list-decimal" id="-1493968276#-wljt1a_6" type="1" start="1"><li class="list-item" id="-1493968276#-wljt1a_7"><p><span class="control" id="-1493968276#-wljt1a_13">Inicio/Fin:</span></p><ul class="list" id="-1493968276#-wljt1a_14" start="1"><li class="list-item" id="-1493968276#-wljt1a_15"><p>Representa el inicio o fin de un algoritmo o proceso.</p></li><li class="list-item" id="-1493968276#-wljt1a_16"><p>Se representa con un &oacute;valo.</p></li></ul></li><li class="list-item" id="-1493968276#-wljt1a_8"><p><span class="control" id="-1493968276#-wljt1a_17">Proceso:</span></p><ul class="list" id="-1493968276#-wljt1a_18" start="1"><li class="list-item" id="-1493968276#-wljt1a_19"><p>Representa una operaci&oacute;n o acci&oacute;n que se realiza en el algoritmo.</p></li><li class="list-item" id="-1493968276#-wljt1a_20"><p>Se representa con un rect&aacute;ngulo.</p></li><li class="list-item" id="-1493968276#-wljt1a_21"><p>Usualmente, se usa para asignar valores a variables, realizar c&aacute;lculos o ejecutar instrucciones.</p></li></ul></li><li class="list-item" id="-1493968276#-wljt1a_9"><p><span class="control" id="-1493968276#-wljt1a_22">Decisi&oacute;n:</span></p><ul class="list" id="-1493968276#-wljt1a_23" start="1"><li class="list-item" id="-1493968276#-wljt1a_24"><p>Representa una condici&oacute;n o pregunta que se eval&uacute;a en el algoritmo.</p></li><li class="list-item" id="-1493968276#-wljt1a_25"><p>Se representa con un rombo.</p></li><li class="list-item" id="-1493968276#-wljt1a_26"><p>Usualmente, se usa para tomar decisiones basadas en una condici&oacute;n.</p></li></ul></li><li class="list-item" id="-1493968276#-wljt1a_10"><p><span class="control" id="-1493968276#-wljt1a_27">Conector:</span></p><ul class="list" id="-1493968276#-wljt1a_28" start="1"><li class="list-item" id="-1493968276#-wljt1a_29"><p>Representa la conexi&oacute;n entre diferentes partes de un diagrama de flujo.</p></li><li class="list-item" id="-1493968276#-wljt1a_30"><p>Se representa con un c&iacute;rculo.</p></li></ul></li><li class="list-item" id="-1493968276#-wljt1a_11"><p><span class="control" id="-1493968276#-wljt1a_31">Flecha:</span></p><ul class="list" id="-1493968276#-wljt1a_32" start="1"><li class="list-item" id="-1493968276#-wljt1a_33"><p>Representa la direcci&oacute;n del flujo de un proceso en el diagrama.</p></li><li class="list-item" id="-1493968276#-wljt1a_34"><p>Se representa con una flecha.</p></li></ul></li><li class="list-item" id="-1493968276#-wljt1a_12"><p><span class="control" id="-1493968276#-wljt1a_35">Entrada/Salida:</span></p><ul class="list" id="-1493968276#-wljt1a_36" start="1"><li class="list-item" id="-1493968276#-wljt1a_37"><p>Representa la entrada o salida de datos en el algoritmo.</p></li><li class="list-item" id="-1493968276#-wljt1a_38"><p>Se representa con un paralelogramo.</p></li><li class="list-item" id="-1493968276#-wljt1a_39"><p>Usualmente, se usa para leer o escribir datos desde o hacia una fuente externa.</p></li></ul></li></ol></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="964062011">Elementos de un diagrama de flujo</h1><p id="964062011#-izf3vj_3">Los diagramas de flujo est&aacute;n compuestos por una serie de elementos que representan diferentes partes de un algoritmo o proceso. Algunos de los elementos m&aacute;s comunes de un diagrama de flujo son:</p><dl id="964062011#-izf3vj_4" date-style="title-top"><div class="def bordered-element detached"><dt id="964062011#-izf3vj_6" class="definition-list-title">Inicio/Fin</dt><dd class="definition-list-description"><p>Representa el inicio o fin de un algoritmo o proceso. Se representa con un &oacute;valo. </p><div class="container"><figure class="image-container"><img class="center image" id="964062011#-izf3vj_16" alt="inicio.png" title="inicio.png" src="C:/Users/Jes%C3%BAs%20Castro/WritersideProjects/algoritmia/Writerside/images/inicio.png" width="120" height="80"><figcaption class="center-text">inicio.png</figcaption></figure></div><div class="container"><figure class="image-container"><img class="center image" id="964062011#-izf3vj_17" alt="fin.png" title="fin.png" src="C:/Users/Jes%C3%BAs%20Castro/WritersideProjects/algoritmia/Writerside/images/fin.png" width="120" height="80"><figcaption class="center-text">fin.png</figcaption></figure></div></dd></div><div class="def bordered-element detached"><dt id="964062011#-izf3vj_7" class="definition-list-title">Proceso</dt><dd class="definition-list-description"><p>Representa una operaci&oacute;n o acci&oacute;n que se realiza en el algoritmo. Se representa con un rect&aacute;ngulo. </p><div class="container"><figure class="image-container"><img class="center image" id="964062011#-izf3vj_19" alt="hacer.png" title="hacer.png" src="C:/Users/Jes%C3%BAs%20Castro/WritersideProjects/algoritmia/Writerside/images/hacer.png" width="139" height="80"><figcaption class="center-text">hacer.png</figcaption></figure></div></dd></div><div class="def bordered-element detached"><dt id="964062011#-izf3vj_8" class="definition-list-title">Decisi&oacute;n</dt><dd class="definition-list-description"><p>Representa una condici&oacute;n o pregunta que se eval&uacute;a en el algoritmo. Se representa con un rombo. </p><div class="container"><figure class="image-container"><img class="center image" id="964062011#-izf3vj_21" alt="desicion.png" title="desicion.png" src="C:/Users/Jes%C3%BAs%20Castro/WritersideProjects/algoritmia/Writerside/images/desicion.png" width="117" height="90"><figcaption class="center-text">desicion.png</figcaption></figure></div></dd></div><div class="def bordered-element detached"><dt id="964062011#-izf3vj_9" class="definition-list-title">Conector</dt><dd class="definition-list-description"><p>Representa la conexi&oacute;n entre diferentes partes de un diagrama de flujo. Se representa con un c&iacute;rculo peque&ntilde;o. </p><p> <img class="inline-icon image image-container" id="964062011#-izf3vj_23" alt="conector.png" title="conector.png" src="C:/Users/Jes%C3%BAs%20Castro/WritersideProjects/algoritmia/Writerside/images/conector.png" width="25" height="25"></p></dd></div><div class="def bordered-element detached"><dt id="964062011#-izf3vj_10" class="definition-list-title">Flecha</dt><dd class="definition-list-description"><p>Representa la direcci&oacute;n del flujo de un proceso en el diagrama. Se representa con una flecha. </p><div class="container"><figure class="image-container"><img class="center image" id="964062011#-izf3vj_25" alt="flecha.png" title="flecha.png" src="C:/Users/Jes%C3%BAs%20Castro/WritersideProjects/algoritmia/Writerside/images/flecha.png" width="30" height="80"><figcaption class="center-text">flecha.png</figcaption></figure></div></dd></div><div class="def bordered-element detached"><dt id="964062011#-izf3vj_11" class="definition-list-title">Entrada</dt><dd class="definition-list-description"><p>Representa la entrada de datos en el algoritmo. Se representa con un paralelogramo. </p><div class="container"><figure class="image-container"><img class="center image" id="964062011#-izf3vj_27" alt="entrada.png" title="entrada.png" src="C:/Users/Jes%C3%BAs%20Castro/WritersideProjects/algoritmia/Writerside/images/entrada.png" width="139" height="80"><figcaption class="center-text">entrada.png</figcaption></figure></div></dd></div><div class="def bordered-element detached"><dt id="964062011#-izf3vj_12" class="definition-list-title">Salida</dt><dd class="definition-list-description"><p>Representa la salida de datos en el algoritmo. Se representa con un documento. </p><div class="container"><figure class="image-container"><img class="center image" id="964062011#-izf3vj_29" alt="salida.png" title="salida.png" src="C:/Users/Jes%C3%BAs%20Castro/WritersideProjects/algoritmia/Writerside/images/salida.png" width="126" height="90"><figcaption class="center-text">salida.png</figcaption></figure></div></dd></div><div class="def bordered-element detached"><dt id="964062011#-izf3vj_13" class="definition-list-title">Para</dt><dd class="definition-list-description"><p>Representa un bucle o ciclo en el algoritmo. Se representa con un hex&aacute;gono. </p><p> En d&oacute;nde se deber&aacute; indicar el n&uacute;mero de veces que se repetir&aacute; el proceso. </p><div class="container"><figure class="image-container"><img class="center image" id="964062011#-izf3vj_32" alt="para.png" title="para.png" src="C:/Users/Jes%C3%BAs%20Castro/WritersideProjects/algoritmia/Writerside/images/para.png" width="229" height="100"><figcaption class="center-text">para.png</figcaption></figure></div></dd></div><div class="def bordered-element detached"><dt id="964062011#-izf3vj_14" class="definition-list-title">Subproceso</dt><dd class="definition-list-description"><p>Representa un proceso o algoritmo que se ejecuta de forma independiente en el diagrama de flujo. Se representa con un rect&aacute;ngulo con dos l&iacute;neas verticales. </p><div class="container"><figure class="image-container"><img class="center image" id="964062011#-izf3vj_34" alt="subproceso.png" title="subproceso.png" src="C:/Users/Jes%C3%BAs%20Castro/WritersideProjects/algoritmia/Writerside/images/subproceso.png" width="228" height="80"><figcaption class="center-text">subproceso.png</figcaption></figure></div></dd></div></dl><p id="964062011#-izf3vj_5">Estos elementos son fundamentales para la creaci&oacute;n y comprensi&oacute;n de un diagrama de flujo, ya que permiten representar de forma clara y concisa la l&oacute;gica y el flujo de ejecuci&oacute;n de un algoritmo o proceso. Al utilizar s&iacute;mbolos gr&aacute;ficos y conectarlos mediante flechas, se crea una representaci&oacute;n visual que facilita la visualizaci&oacute;n y el an&aacute;lisis de un algoritmo, lo que permite dise&ntilde;ar, analizar y documentar procesos de una manera efectiva y eficiente.</p></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="1208131206">La condicional</h1><p id="1208131206#x3c1uw_3">Dentro de algoritmia podemos utilizar la condicional para tomar decisiones en nuestro c&oacute;digo. La condicional es una estructura de control que nos permite evaluar una expresi&oacute;n y ejecutar un bloque de c&oacute;digo si la expresi&oacute;n es verdadera.</p><p id="1208131206#x3c1uw_4">Para hacer esto usamos la instrucci&oacute;n <span class="inline-code" id="1208131206#x3c1uw_15">Si</span>, que se escribe de la siguiente manera:</p><div class="detached code-block" id="1208131206#x3c1uw_5"><pre><code class="language-none">n. Si &lt;expresión&gt; Entonces
+     Inicio
+        &lt;bloque de código&gt;
+     Fin
+n+1. &lt;&lt;Otras instrucciones&gt;&gt;</code></pre></div><blockquote class="prompt flex bordered-element-rounded tip detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M12.946 3.552L21.52 18.4c.424.735.33 1.6-.519 1.6H3.855c-.85 0-1.817-.865-1.392-1.6l8.573-14.848a1.103 1.103 0 0 1 1.91 0zm.545 12.948a1.5 1.5 0 1 0-1.5 1.5 1.5 1.5 0 0 0 1.5-1.5zM13 8h-2v5h2z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p id="1208131206#x3c1uw_16">Nota: Las instrucciones <span class="inline-code" id="1208131206#x3c1uw_17">Inicio</span> y <span class="inline-code" id="1208131206#x3c1uw_18">Fin</span> son solo para indicar el inicio y fin del bloque de c&oacute;digo que se ejecuta si la expresi&oacute;n es verdadera. No son instrucciones que se escriban en el c&oacute;digo, y sirven para delimitar las instrucciones que se ejecutan si la expresi&oacute;n es verdadera.</p></div>
+</blockquote>
+<p id="1208131206#x3c1uw_7">Donde <span class="inline-code" id="1208131206#x3c1uw_19">&lt;expresi&oacute;n&gt;</span> es una expresi&oacute;n l&oacute;gica que se eval&uacute;a a verdadero o falso, y <span class="inline-code" id="1208131206#x3c1uw_20">&lt;bloque de c&oacute;digo&gt;</span> es un conjunto de instrucciones que se ejecutan si la expresi&oacute;n es verdadera.</p><p id="1208131206#x3c1uw_8">Por ejemplo, si queremos imprimir un mensaje si un n&uacute;mero es mayor que 5, podemos hacerlo de la siguiente manera:</p><div class="detached code-block" id="1208131206#x3c1uw_9"><pre><code class="language-none">1. Inicio
+2. Leer n
+3. Si n &gt; 5 Entonces
+    Escribir &quot;El número es mayor que 5&quot;  
+4. Fin</code></pre></div><p id="1208131206#x3c1uw_10">En este caso, si el n&uacute;mero ingresado es mayor que 5, se imprimir&aacute; el mensaje &quot;El n&uacute;mero es mayor que 5&quot;.</p><section><h2 id="1208131206#condicional-doble" data-toc="condicional-doble#conditional.md-condicional-doble">Condicional doble</h2><p id="1208131206#x3c1uw_21">Adem&aacute;s de la condicional simple, tambi&eacute;n podemos utilizar la condicional doble, que nos permite ejecutar un bloque de c&oacute;digo si la expresi&oacute;n es verdadera, y otro bloque de c&oacute;digo si la expresi&oacute;n es falsa.</p><p id="1208131206#x3c1uw_22">La condicional doble se escribe de la siguiente manera:</p><div class="detached code-block" id="1208131206#x3c1uw_23"><pre><code class="language-none">n. Si &lt;expresión&gt; Entonces
+        Inicio
+            &lt;bloque de código 1&gt;
+        Fin
+    Otro caso
+        Inicio
+            &lt;bloque de código 2&gt;
+        Fin
+n+1. &lt;&lt;Otras instrucciones&gt;&gt;</code></pre></div><p id="1208131206#x3c1uw_24">Donde <span class="inline-code" id="1208131206#x3c1uw_28">&lt;expresi&oacute;n&gt;</span> es una expresi&oacute;n l&oacute;gica que se eval&uacute;a a verdadero o falso, <span class="inline-code" id="1208131206#x3c1uw_29">&lt;bloque de c&oacute;digo 1&gt;</span> es un conjunto de instrucciones que se ejecutan si la expresi&oacute;n es verdadera, y <span class="inline-code" id="1208131206#x3c1uw_30">&lt;bloque de c&oacute;digo 2&gt;</span> es un conjunto de instrucciones que se ejecutan si la expresi&oacute;n es falsa.</p><p id="1208131206#x3c1uw_25">Por ejemplo, si queremos imprimir un mensaje si un n&uacute;mero es mayor que 5 y otro mensaje si no lo es, podemos hacerlo de la siguiente manera:</p><div class="detached code-block" id="1208131206#x3c1uw_26"><pre><code class="language-none">1. Inicio
+2. Leer n
+3. Si n &gt; 5 Entonces
+        Escribir &quot;El número es mayor que 5&quot;  
+   Otro caso
+        Escribir &quot;El número no es mayor que 5&quot;
+4. Fin</code></pre></div><p id="1208131206#x3c1uw_27">En este caso, si el n&uacute;mero ingresado es mayor que 5, se imprimir&aacute; el mensaje &quot;El n&uacute;mero es mayor que 5&quot;, y si no lo es, se imprimir&aacute; el mensaje &quot;El n&uacute;mero no es mayor que 5&quot;.</p></section><section><h2 id="1208131206#condicional-m-ltiple" data-toc="condicional-m-ltiple#conditional.md-condicional-m-ltiple">Condicional m&uacute;ltiple</h2><p id="1208131206#x3c1uw_31">Adem&aacute;s de la condicional simple y doble, tambi&eacute;n podemos utilizar la condicional m&uacute;ltiple, que nos permite evaluar varias expresiones y ejecutar un bloque de c&oacute;digo dependiendo de cu&aacute;l de ellas sea verdadera.</p><p id="1208131206#x3c1uw_32">La condicional m&uacute;ltiple se escribe de la siguiente manera:</p><div class="detached code-block" id="1208131206#x3c1uw_33"><pre><code class="language-none">n. Si &lt;expresión 1&gt; Entonces
+        Inicio
+            &lt;bloque de código 1&gt;
+        Fin
+    Otro caso 
+        Si &lt;expresión 2&gt; Entonces
+            Inicio
+                &lt;bloque de código 2&gt;
+            Fin
+        Otro caso 
+            Si &lt;expresión 3&gt; Entonces
+                Inicio
+                    &lt;bloque de código 3&gt;
+                Fin
+                ...
+                Otro caso
+                    Inicio
+                        &lt;bloque de código n&gt;
+                    Fin
+n+1. &lt;&lt;Otras instrucciones&gt;&gt;</code></pre></div><p id="1208131206#x3c1uw_34">Donde <span class="inline-code" id="1208131206#x3c1uw_38">&lt;expresi&oacute;n 1&gt;</span>, <span class="inline-code" id="1208131206#x3c1uw_39">&lt;expresi&oacute;n 2&gt;</span>, <span class="inline-code" id="1208131206#x3c1uw_40">&lt;expresi&oacute;n 3&gt;</span>, ..., <span class="inline-code" id="1208131206#x3c1uw_41">&lt;expresi&oacute;n n&gt;</span> son expresiones l&oacute;gicas que se eval&uacute;an a verdadero o falso, <span class="inline-code" id="1208131206#x3c1uw_42">&lt;bloque de c&oacute;digo 1&gt;</span>, <span class="inline-code" id="1208131206#x3c1uw_43">&lt;bloque de c&oacute;digo 2&gt;</span>, <span class="inline-code" id="1208131206#x3c1uw_44">&lt;bloque de c&oacute;digo 3&gt;</span>, ..., <span class="inline-code" id="1208131206#x3c1uw_45">&lt;bloque de c&oacute;digo n&gt;</span> son conjuntos de instrucciones que se ejecutan si la expresi&oacute;n correspondiente es verdadera.</p><p id="1208131206#x3c1uw_35">Por ejemplo, si queremos imprimir un mensaje dependiendo de si un n&uacute;mero es mayor que 5, igual a 5 o menor que 5, podemos hacerlo de la siguiente manera:</p><div class="detached code-block" id="1208131206#x3c1uw_36"><pre><code class="language-none">1. Inicio
+2. Leer n
+3. Si n &gt; 5 Entonces
+        Escribir &quot;El número es mayor que 5&quot;  
+    Otro caso 
+        Si n = 5 Entonces
+            Escribir &quot;El número es igual a 5&quot;
+        Otro caso
+            Escribir &quot;El número es menor que 5&quot;
+4. Fin</code></pre></div><p id="1208131206#x3c1uw_37">En este caso, si el n&uacute;mero ingresado es mayor que 5, se imprimir&aacute; el mensaje &quot;El n&uacute;mero es mayor que 5&quot;, si es igual a 5, se imprimir&aacute; el mensaje &quot;El n&uacute;mero es igual a 5&quot;, y si es menor que 5, se imprimir&aacute; el mensaje &quot;El n&uacute;mero es menor que 5&quot;.</p></section><section><h2 id="1208131206#condicional-anidada" data-toc="condicional-anidada#conditional.md-condicional-anidada">Condicional anidada</h2><p id="1208131206#x3c1uw_46">Adem&aacute;s de la condicional simple, doble y m&uacute;ltiple, tambi&eacute;n podemos utilizar la condicional anidada, que nos permite anidar condicionales dentro de otros condicionales.</p><p id="1208131206#x3c1uw_47">La condicional anidada se escribe de la siguiente manera:</p><div class="detached code-block" id="1208131206#x3c1uw_48"><pre><code class="language-none">n. Si &lt;expresión 1&gt; Entonces
+        Inicio
+            Si &lt;expresión 2&gt; Entonces
+                Inicio
+                    &lt;bloque de código 1&gt;
+                Fin
+            Otro caso
+                Inicio
+                    &lt;bloque de código 2&gt;
+                Fin
+        Fin
+    Otro caso
+        Inicio
+            &lt;bloque de código 3&gt;
+        Fin
+n+1. &lt;&lt;Otras instrucciones&gt;&gt;</code></pre></div><p id="1208131206#x3c1uw_49">Donde <span class="inline-code" id="1208131206#x3c1uw_53">&lt;expresi&oacute;n 1&gt;</span> y <span class="inline-code" id="1208131206#x3c1uw_54">&lt;expresi&oacute;n 2&gt;</span> son expresiones l&oacute;gicas que se eval&uacute;an a verdadero o falso, <span class="inline-code" id="1208131206#x3c1uw_55">&lt;bloque de c&oacute;digo 1&gt;</span>, <span class="inline-code" id="1208131206#x3c1uw_56">&lt;bloque de c&oacute;digo 2&gt;</span>, <span class="inline-code" id="1208131206#x3c1uw_57">&lt;bloque de c&oacute;digo 3&gt;</span>, ..., <span class="inline-code" id="1208131206#x3c1uw_58">&lt;bloque de c&oacute;digo n&gt;</span> son conjuntos de instrucciones que se ejecutan si la expresi&oacute;n correspondiente es verdadera.</p><p id="1208131206#x3c1uw_50">Por ejemplo, si queremos imprimir un mensaje dependiendo de si un n&uacute;mero es mayor que 5 y par, mayor que 5 e impar, o menor que 5, podemos hacerlo de la siguiente manera:</p><div class="detached code-block" id="1208131206#x3c1uw_51"><pre><code class="language-none">1. Inicio
+2. Leer n
+3. Si n &gt; 5 Entonces
+        Si n % 2 = 0 Entonces
+            Escribir &quot;El número es mayor que 5 y par&quot;  
+        Otro caso
+            Escribir &quot;El número es mayor que 5 e impar&quot;
+    Otro caso
+        Escribir &quot;El número es menor que 5&quot;
+4. Fin</code></pre></div><p id="1208131206#x3c1uw_52">En este caso, si el n&uacute;mero ingresado es mayor que 5 y par, se imprimir&aacute; el mensaje &quot;El n&uacute;mero es mayor que 5 y par&quot;, si es mayor que 5 e impar, se imprimir&aacute; el mensaje &quot;El n&uacute;mero es mayor que 5 e impar&quot;, y si es menor que 5, se imprimir&aacute; el mensaje &quot;El n&uacute;mero es menor que 5&quot;.</p></section><section><h2 id="1208131206#conclusiones" data-toc="conclusiones#conditional.md-conclusiones">Conclusiones</h2><p id="1208131206#x3c1uw_59">En resumen, la condicional es una estructura de control que nos permite tomar decisiones en nuestro c&oacute;digo. Podemos utilizar la condicional simple, doble, m&uacute;ltiple y anidada para evaluar expresiones l&oacute;gicas y ejecutar bloques de c&oacute;digo dependiendo de si la expresi&oacute;n es verdadera o falsa. Esto nos permite crear programas m&aacute;s complejos y con un mayor grado de control sobre su ejecuci&oacute;n.</p></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-262542480">Ejemplo de uso de Condicionales</h1><section><h2 id="-262542480#el-problema" data-toc="el-problema#ejemplo-condicional.md-el-problema">El Problema</h2><p id="-262542480#dpuf5q_10">F&aacute;bricas &ldquo;El cometa&rdquo; produce art&iacute;culos con claves (1, 2, 3, 4, 5 y 6). Se requiere un algoritmo para calcular los precios de venta, para esto hay que considerar lo siguiente:</p><ul class="list" id="-262542480#dpuf5q_11" start="1"><li class="list-item" id="-262542480#dpuf5q_14"><p>Costo de producci&oacute;n = materia prima + mano de obra + gastos de fabricaci&oacute;n.</p></li><li class="list-item" id="-262542480#dpuf5q_15"><p>Precio de venta = costo de producci&oacute;n + 45 % de costo de producci&oacute;n.</p></li></ul><p id="-262542480#dpuf5q_12">El costo de la mano de obra se obtiene de la siguiente forma: para los productos con clave 3 o 4 se carga 75 % del costo de la materia prima; para los que tienen clave 1 y 5 se carga 80 %, y para los que tienen clave 2 o 6, 85 %.</p><p id="-262542480#dpuf5q_13">Para calcular el gasto de fabricaci&oacute;n se considera que si el art&iacute;culo que se va a producir tiene claves 2 o 5, este gasto representa 30 % sobre el costo de la materia prima; si las claves son 3 o 6, representa 35 %; si las claves son 1 o 4, representa 28 %. La materia prima tiene el mismo costo para cualquier clave.</p></section><section><h2 id="-262542480#definici-n-de-variables" data-toc="definici-n-de-variables#ejemplo-condicional.md-definici-n-de-variables">Definici&oacute;n de Variables</h2><p id="-262542480#dpuf5q_16">Para efectos del problema planteado se tiene lo siguiente:</p><div class="table-wrapper detached"><table id="-262542480#dpuf5q_17"><tr class="header-row" id="-262542480#dpuf5q_18"><th id="-262542480#dpuf5q_25"><p>Variable</p></th><th id="-262542480#dpuf5q_26"><p>Descripci&oacute;n</p></th><th id="-262542480#dpuf5q_27"><p>Tipo de Dato</p></th></tr><tr class="" id="-262542480#dpuf5q_19"><td id="-262542480#dpuf5q_28"><p><span class="inline-code" id="-262542480#dpuf5q_31">C</span></p></td><td id="-262542480#dpuf5q_29"><p>Clave del art&iacute;culo a producir.</p></td><td id="-262542480#dpuf5q_30"><p><span class="inline-code" id="-262542480#dpuf5q_32">Entero</span></p></td></tr><tr class="" id="-262542480#dpuf5q_20"><td id="-262542480#dpuf5q_33"><p><span class="inline-code" id="-262542480#dpuf5q_36">MP</span></p></td><td id="-262542480#dpuf5q_34"><p>Costo de la materia prima.</p></td><td id="-262542480#dpuf5q_35"><p><span class="inline-code" id="-262542480#dpuf5q_37">Real</span></p></td></tr><tr class="" id="-262542480#dpuf5q_21"><td id="-262542480#dpuf5q_38"><p><span class="inline-code" id="-262542480#dpuf5q_41">MO</span></p></td><td id="-262542480#dpuf5q_39"><p>Costo de la mano de obra.</p></td><td id="-262542480#dpuf5q_40"><p><span class="inline-code" id="-262542480#dpuf5q_42">Real</span></p></td></tr><tr class="" id="-262542480#dpuf5q_22"><td id="-262542480#dpuf5q_43"><p><span class="inline-code" id="-262542480#dpuf5q_46">GF</span></p></td><td id="-262542480#dpuf5q_44"><p>Costo de los gastos de fabricaci&oacute;n.</p></td><td id="-262542480#dpuf5q_45"><p><span class="inline-code" id="-262542480#dpuf5q_47">Real</span></p></td></tr><tr class="" id="-262542480#dpuf5q_23"><td id="-262542480#dpuf5q_48"><p><span class="inline-code" id="-262542480#dpuf5q_51">CP</span></p></td><td id="-262542480#dpuf5q_49"><p>Costo de producci&oacute;n.</p></td><td id="-262542480#dpuf5q_50"><p><span class="inline-code" id="-262542480#dpuf5q_52">Real</span></p></td></tr><tr class="" id="-262542480#dpuf5q_24"><td id="-262542480#dpuf5q_53"><p><span class="inline-code" id="-262542480#dpuf5q_56">PV</span></p></td><td id="-262542480#dpuf5q_54"><p>Precio de venta.</p></td><td id="-262542480#dpuf5q_55"><p><span class="inline-code" id="-262542480#dpuf5q_57">Real</span></p></td></tr></table></div></section><section><h2 id="-262542480#el-algoritmo" data-toc="el-algoritmo#ejemplo-condicional.md-el-algoritmo">EL Algoritmo</h2><div class="detached code-block" id="-262542480#dpuf5q_58"><pre><code class="language-none">Nombre del Algoritmo: CostosFabrica
+Declaración de variables: 
+	Entero: C
+	Real: MP, MO, GF, CP, PV
+Algoritmo:
+1. Inicio
+2. Escribir &quot;Ingrese el código del producto a fabricar&quot;
+3. Leer C
+4. Escribir &quot;Ingrese el costo de la materia prima&quot;
+5. Leer MP
+6. Si C == 4 || C == 3 Entonces
+		Hacer MO= MP * 0.75
+	Otro caso
+		Si C == 1 || C == 5 Entonces
+			Hacer MO = MP * 0.80
+		Otro caso
+			Hacer MO = MP * 0.85
+7. Si C == 2 || C == 5 Entonces			
+		Hacer GF = MP * 0.30
+	Otro caso
+		Si C == 3 || C == 6 Entonces
+			Hacer GF = MP * 0.35
+		Otro caso
+			Hacer GF = MP * 0.28
+8. Hacer CP = MP + MO + GF
+9. Hacer PV = CP * 1.45 =&gt; CP + CP * 0.45
+10. Escribir &quot;El costo de producción del producto es: &quot;, CP
+11. Escribir &quot;El costo de venta del producto es: &quot;, PV
+12. Fin</code></pre></div></section><section><h2 id="-262542480#el-diagrama-de-flujo" data-toc="el-diagrama-de-flujo#ejemplo-condicional.md-el-diagrama-de-flujo">El diagrama de flujo</h2><div class="container"><figure class="image-container"><img class="center image image-size" id="-262542480#dpuf5q_59" alt="condicional_1.png" title="condicional_1.png" src="C:/Users/Jes%C3%BAs%20Castro/WritersideProjects/algoritmia/Writerside/images/ejemplos/condicional_1.png" width="3100" height="9324"><figcaption class="center-text">condicional_1.png</figcaption></figure></div></section><section><h2 id="-262542480#prueba-del-algoritmo" data-toc="prueba-del-algoritmo#ejemplo-condicional.md-prueba-del-algoritmo">Prueba del Algoritmo</h2><p id="-262542480#dpuf5q_60">Para probar el algoritmo se ingresan los siguientes datos:</p><ul class="list" id="-262542480#dpuf5q_61" start="1"><li class="list-item" id="-262542480#dpuf5q_64"><p>Clave del producto: 3</p></li><li class="list-item" id="-262542480#dpuf5q_65"><p>Costo de la materia prima: 100</p></li></ul><p id="-262542480#dpuf5q_62">Al ejecutar el algoritmo se obtiene lo siguiente:</p><div class="detached code-block" id="-262542480#dpuf5q_63"><pre><code class="language-none">Ingrese el código del producto a fabricar
+3
+Ingrese el costo de la materia prima
+100
+El costo de producción del producto es: 210
+El costo de venta del producto es: 304.5</code></pre></div></section><section><h2 id="-262542480#conclusiones" data-toc="conclusiones#ejemplo-condicional.md-conclusiones">Conclusiones</h2><p id="-262542480#dpuf5q_66">El uso de condicionales en un algoritmo permite tomar decisiones basadas en el valor de una expresi&oacute;n l&oacute;gica. En este caso, se utiliz&oacute; una condicional para determinar el costo de la mano de obra y los gastos de fabricaci&oacute;n en funci&oacute;n de la clave del producto a fabricar. Esto permiti&oacute; calcular el costo de producci&oacute;n y el precio de venta del producto de forma autom&aacute;tica, simplificando el proceso de c&aacute;lculo y evitando errores humanos.</p></section><section><h2 id="-262542480#referencias" data-toc="referencias#ejemplo-condicional.md-referencias">Referencias</h2><ul class="list" id="-262542480#dpuf5q_67" start="1"><li class="list-item" id="-262542480#dpuf5q_68"><p>Estructuras de control en programaci&oacute;n (<a href="https://es.wikipedia.org/wiki/Estructura_de_control">https://es.wikipedia.org/wiki/Estructura_de_control</a>)</p></li><li class="list-item" id="-262542480#dpuf5q_69"><p>Algoritmos y diagramas de flujo (<a href="https://es.wikipedia.org/wiki/Diagrama_de_flujo">https://es.wikipedia.org/wiki/Diagrama_de_flujo</a>)</p></li><li class="list-item" id="-262542480#dpuf5q_70"><p>Introducci&oacute;n a la programaci&oacute;n (<a href="https://es.wikipedia.org/wiki/Programación">https://es.wikipedia.org/wiki/Programación</a>)</p></li><li class="list-item" id="-262542480#dpuf5q_71"><p>Lenguajes de programaci&oacute;n (<a href="https://es.wikipedia.org/wiki/Lenguaje_de_programación">https://es.wikipedia.org/wiki/Lenguaje_de_programación</a>)</p></li></ul></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-889473228">En caso de (switch)</h1><p id="-889473228#-m7qrg8_3">La estructura de decisi&oacute;n <span class="inline-code" id="-889473228#-m7qrg8_8">switch</span> es una estructura de control que permite evaluar una expresi&oacute;n y ejecutar un bloque de c&oacute;digo dependiendo del valor de la expresi&oacute;n. La estructura <span class="inline-code" id="-889473228#-m7qrg8_9">switch</span> en pseudoc&oacute;digo es la siguiente:</p><div class="detached code-block" id="-889473228#-m7qrg8_4"><pre><code class="language-none">n.- En caso de [expresión]
+       Caso [valor1]
+          Inicio
+            [Acción1]
+          Fin
+       Caso [valor2]
+          Inicio
+            [Acción2]
+          Fin
+       ...
+       Caso [valorN]
+          Inicio
+            [AcciónN]
+          Fin
+       Otro Caso
+          Inicio
+            [Acción por defecto]
+          Fin</code></pre></div><p id="-889473228#-m7qrg8_5">Como se puede observar, la estructura <span class="inline-code" id="-889473228#-m7qrg8_10">switch</span> consta de varios bloques de c&oacute;digo, cada uno asociado a un valor espec&iacute;fico de la expresi&oacute;n. Si el valor de la expresi&oacute;n coincide con alguno de los valores especificados, se ejecuta el bloque de c&oacute;digo correspondiente. Si no se encuentra un valor coincidente, se ejecuta el bloque de c&oacute;digo asociado a <span class="inline-code" id="-889473228#-m7qrg8_11">Otro Caso</span>.</p><p id="-889473228#-m7qrg8_6">Es importante tener en cuenta que la estructura <span class="inline-code" id="-889473228#-m7qrg8_12">switch</span> no permite evaluar expresiones complejas, como rangos de valores o expresiones booleanas. Solo se pueden evaluar valores concretos.</p><section><h2 id="-889473228#diagrama-de-flujo" data-toc="diagrama-de-flujo#switch.md-diagrama-de-flujo">Diagrama de flujo</h2><div class="container"><figure class="image-container"><img class="center image image-size" id="-889473228#-m7qrg8_13" alt="switch_flujo.png" title="switch_flujo.png" src="C:/Users/Jes%C3%BAs%20Castro/WritersideProjects/algoritmia/Writerside/images/switch_flujo.png" width="2756" height="2364"><figcaption class="center-text">switch_flujo.png</figcaption></figure></div><p id="-889473228#-m7qrg8_14">En el diagrama de flujo, la estructura de decisi&oacute;n <span class="inline-code" id="-889473228#-m7qrg8_15">switch</span> se representa con un rombo que contiene la variable o expresi&oacute;n a evaluar. Cada flecha que sale del rombo representa un caso posible, con una etiqueta que indica el valor asociado al caso. Si la expresi&oacute;n coincide con alguno de los valores especificados, se sigue la flecha correspondiente al caso. Si no se encuentra un valor coincidente, se sigue la flecha correspondiente a <span class="inline-code" id="-889473228#-m7qrg8_16">Otro Caso</span>.</p></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="28426946">Ejemplo de en caso de (switch)</h1><section><h2 id="28426946#caso-1" data-toc="caso-1#switch-examples.md-caso-1">Caso 1</h2><p id="28426946#ixv19o_4">Una compa&ntilde;&iacute;a de paqueter&iacute;a internacional tiene servicio en algunos pa&iacute;ses de Am&eacute;rica del Norte, Am&eacute;rica Central, Am&eacute;rica del Sur, Europa y Asia. El costo por el servicio de paqueter&iacute;a se basa en el peso del paquete y la zona a la que va dirigido. Lo anterior se muestra en la tabla siguiente:</p><div class="table-wrapper detached"><table id="28426946#ixv19o_5"><tr class="header-row" id="28426946#ixv19o_11"><th id="28426946#ixv19o_17"><p>Zona</p></th><th id="28426946#ixv19o_18"><p>Ubicaci&oacute;n</p></th><th id="28426946#ixv19o_19"><p>Costo por Kg</p></th></tr><tr class="" id="28426946#ixv19o_12"><td id="28426946#ixv19o_20"><p>1</p></td><td id="28426946#ixv19o_21"><p>Am&eacute;rica del Norte</p></td><td id="28426946#ixv19o_22"><p>24.00</p></td></tr><tr class="" id="28426946#ixv19o_13"><td id="28426946#ixv19o_23"><p>2</p></td><td id="28426946#ixv19o_24"><p>Am&eacute;rica Central</p></td><td id="28426946#ixv19o_25"><p>20.00</p></td></tr><tr class="" id="28426946#ixv19o_14"><td id="28426946#ixv19o_26"><p>3</p></td><td id="28426946#ixv19o_27"><p>Am&eacute;rica del Sur</p></td><td id="28426946#ixv19o_28"><p>21.00</p></td></tr><tr class="" id="28426946#ixv19o_15"><td id="28426946#ixv19o_29"><p>4</p></td><td id="28426946#ixv19o_30"><p>Europa</p></td><td id="28426946#ixv19o_31"><p>10.00</p></td></tr><tr class="" id="28426946#ixv19o_16"><td id="28426946#ixv19o_32"><p>5</p></td><td id="28426946#ixv19o_33"><p>Asia</p></td><td id="28426946#ixv19o_34"><p>18.00</p></td></tr></table></div><p id="28426946#ixv19o_6">Se requiere un algoritmo para determinar cu&aacute;nto se debe cobrar por el servicio de paqueter&iacute;a, considerando que si el peso del paquete excede los 5 kg, se debe cobrar un costo adicional de 5.00 por cada kilo adicional.</p><section><h3 id="28426946#definici-n-de-variables" data-toc="definici-n-de-variables#switch-examples.md-definici-n-de-variables">Definici&oacute;n de Variables</h3><p id="28426946#ixv19o_35">Para efectos del problema planteado se tiene lo siguiente:</p><div class="table-wrapper detached"><table id="28426946#ixv19o_36"><tr class="header-row" id="28426946#ixv19o_37"><th id="28426946#ixv19o_41"><p>Variable</p></th><th id="28426946#ixv19o_42"><p>Descripci&oacute;n</p></th><th id="28426946#ixv19o_43"><p>Tipo de Dato</p></th></tr><tr class="" id="28426946#ixv19o_38"><td id="28426946#ixv19o_44"><p><span class="inline-code" id="28426946#ixv19o_47">Z</span></p></td><td id="28426946#ixv19o_45"><p>Zona a la que va dirigido.</p></td><td id="28426946#ixv19o_46"><p><span class="inline-code" id="28426946#ixv19o_48">Entero</span></p></td></tr><tr class="" id="28426946#ixv19o_39"><td id="28426946#ixv19o_49"><p><span class="inline-code" id="28426946#ixv19o_52">P</span></p></td><td id="28426946#ixv19o_50"><p>Peso del paquete.</p></td><td id="28426946#ixv19o_51"><p><span class="inline-code" id="28426946#ixv19o_53">Real</span></p></td></tr><tr class="" id="28426946#ixv19o_40"><td id="28426946#ixv19o_54"><p><span class="inline-code" id="28426946#ixv19o_57">C</span></p></td><td id="28426946#ixv19o_55"><p>Costo del servicio.</p></td><td id="28426946#ixv19o_56"><p><span class="inline-code" id="28426946#ixv19o_58">Real</span></p></td></tr></table></div></section><section><h3 id="28426946#el-algoritmo" data-toc="el-algoritmo#switch-examples.md-el-algoritmo">El Algoritmo</h3><div class="detached code-block" id="28426946#ixv19o_59"><pre><code class="language-none">Nombre del Algoritmo: CostoPaqueteria
+Declaración de variables: 
+    Entero: Z
+    Real: P, C
+Algoritmo:
+1. Inicio
+2. Escribir &quot;Seleccione la zona a la que va dirigido el paquete:
+            1. América del Norte
+            2. América Central
+            3. América del Sur
+            4. Europa
+            5. Asia&quot;
+3. Leer Z
+    4. Escribir &quot;Ingrese el peso del paquete&quot;
+5. Leer P
+6. En caso de Z Hacer
+        Caso 1
+            Inicio
+                Hacer C = P * 24.00
+            Fin
+        Caso 2
+            Hacer C = P * 20.00
+        Caso 3
+            Inicio
+                Hacer C = P * 21.00
+            Fin
+        Caso 4
+            Inicio
+                Hacer C = P * 10.00
+            Fin
+        Caso 5
+            Inicio
+                Hacer C = P * 18.00
+            Fin
+        Otro Caso
+            Inicio
+                Hacer C = 0.00
+            Fin
+7. Si P &gt; 5 Entonces
+        Hacer C = C + (P - 5) * 5.00
+8. Escribir &quot;El costo del servicio de paquetería es: &quot;, C
+9. Fin</code></pre></div></section><section><h3 id="28426946#el-diagrama-de-flujo" data-toc="el-diagrama-de-flujo#switch-examples.md-el-diagrama-de-flujo">El diagrama de flujo</h3><div class="container"><figure class="image-container"><img class="center image image-size" id="28426946#ixv19o_60" alt="switch_1.png" title="switch_1.png" src="C:/Users/Jes%C3%BAs%20Castro/WritersideProjects/algoritmia/Writerside/images/ejemplos/switch_1.png" width="3964" height="7364"><figcaption class="center-text">switch_1.png</figcaption></figure></div></section><section><h3 id="28426946#prueba-del-algoritmo" data-toc="prueba-del-algoritmo#switch-examples.md-prueba-del-algoritmo">Prueba del Algoritmo</h3><p id="28426946#ixv19o_61">Para probar el algoritmo se ingresan los siguientes datos:</p><ul class="list" id="28426946#ixv19o_62" start="1"><li class="list-item" id="28426946#ixv19o_65"><p>Zona: 3</p></li><li class="list-item" id="28426946#ixv19o_66"><p>Peso del paquete: 7</p></li></ul><p id="28426946#ixv19o_63">Al ejecutar el algoritmo se obtiene lo siguiente:</p><div class="detached code-block" id="28426946#ixv19o_64"><pre><code class="language-none">Seleccione la zona a la que va dirigido el paquete:
+            1. América del Norte
+            2. América Central
+            3. América del Sur
+            4. Europa
+            5. Asia
+3
+Ingrese el peso del paquete
+7
+El costo del servicio de paquetería es: 147.00</code></pre></div></section></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="984373974">Estructuras Repetitivas</h1><section><h2 id="984373974#introducci-n" data-toc="introducci-n#repetitivas.md-introducci-n">Introducci&oacute;n</h2><p id="984373974#uem2oo_7">Las estructuras repetitivas son estructuras de control que permiten ejecutar un bloque de c&oacute;digo m&uacute;ltiples veces. Estas estructuras son &uacute;tiles cuando se necesita realizar una tarea repetitiva, como sumar una lista de n&uacute;meros o imprimir una secuencia de caracteres.</p><p id="984373974#uem2oo_8">Las estructuras repetitivas m&aacute;s comunes son el bucle <span class="inline-code" id="984373974#uem2oo_9">for</span>, el bucle <span class="inline-code" id="984373974#uem2oo_10">while</span> y el bucle <span class="inline-code" id="984373974#uem2oo_11">do while</span>. El bucle <span class="inline-code" id="984373974#uem2oo_12">for</span> se utiliza cuando se conoce el n&uacute;mero de iteraciones que se deben realizar, mientras que el bucle <span class="inline-code" id="984373974#uem2oo_13">while</span> se utiliza cuando se desconoce el n&uacute;mero de iteraciones.</p></section><section><h2 id="984373974#mientras-que-while" data-toc="mientras-que-while#repetitivas.md-mientras-que-while">Mientras que (while)</h2><p id="984373974#uem2oo_14">La estructura repetitiva <span class="inline-code" id="984373974#uem2oo_19">while</span> es una estructura de control que permite ejecutar un bloque de c&oacute;digo mientras se cumpla una condici&oacute;n. La estructura <span class="inline-code" id="984373974#uem2oo_20">while</span> en pseudoc&oacute;digo es la siguiente:</p><div class="detached code-block" id="984373974#uem2oo_15"><pre><code class="language-none">n.- Mientras que [condición]
+       Inicio
+         [Acción]
+       Fin</code></pre></div><div class="container"><figure class="image-container"><img class="center image image-size" id="984373974#uem2oo_16" alt="while.png" title="while.png" src="C:/Users/Jes%C3%BAs%20Castro/WritersideProjects/algoritmia/Writerside/images/while.png" width="2004" height="1804"><figcaption class="center-text">while.png</figcaption></figure></div><p id="984373974#uem2oo_17">Como se puede observar, la estructura <span class="inline-code" id="984373974#uem2oo_21">while</span> consta de un bloque de c&oacute;digo que se ejecuta mientras la condici&oacute;n sea verdadera. Si la condici&oacute;n es falsa, el bloque de c&oacute;digo no se ejecuta.</p><p id="984373974#uem2oo_18">Es importante tener en cuenta que si la condici&oacute;n es siempre verdadera, el bucle <span class="inline-code" id="984373974#uem2oo_22">while</span> se ejecutar&aacute; indefinidamente,</p></section><section><h2 id="984373974#hacer-hasta-que-do-while" data-toc="hacer-hasta-que-do-while#repetitivas.md-hacer-hasta-que-do-while">Hacer hasta que (do while)</h2><p id="984373974#uem2oo_23">La estructura repetitiva <span class="inline-code" id="984373974#uem2oo_28">do while</span> es una estructura de control que permite ejecutar un bloque de c&oacute;digo al menos una vez y luego repetirlo mientras no se cumpla una condici&oacute;n. La estructura <span class="inline-code" id="984373974#uem2oo_29">do while</span> en pseudoc&oacute;digo es la siguiente:</p><div class="detached code-block" id="984373974#uem2oo_24"><pre><code class="language-none">n.- Hacer
+       Inicio
+         [Acción]
+       Fin
+    Hasta que [condición]</code></pre></div><div class="container"><figure class="image-container"><img class="center image image-size" id="984373974#uem2oo_25" alt="dowhile.png" title="dowhile.png" src="C:/Users/Jes%C3%BAs%20Castro/WritersideProjects/algoritmia/Writerside/images/dowhile.png" width="2004" height="1804"><figcaption class="center-text">dowhile.png</figcaption></figure></div><p id="984373974#uem2oo_26">Como se puede observar, la estructura <span class="inline-code" id="984373974#uem2oo_30">do while</span> consta de un bloque de c&oacute;digo que se ejecuta al menos una vez y luego se repite mientras la condici&oacute;n sea falsa. Si la condici&oacute;n es verdadera, se continuar&aacute; con el flujo del programa.</p><p id="984373974#uem2oo_27">Al igual que con el bucle <span class="inline-code" id="984373974#uem2oo_31">while</span>, si la condici&oacute;n es siempre falsa, el bucle <span class="inline-code" id="984373974#uem2oo_32">do while</span> se ejecutar&aacute; indefinidamente.</p></section><section><h2 id="984373974#para-for" data-toc="para-for#repetitivas.md-para-for">Para (for)</h2><p id="984373974#uem2oo_33">La estructura repetitiva <span class="inline-code" id="984373974#uem2oo_41">for</span> es una estructura de control que permite ejecutar un bloque de c&oacute;digo un n&uacute;mero fijo de veces. La estructura <span class="inline-code" id="984373974#uem2oo_42">for</span> en pseudoc&oacute;digo es la siguiente:</p><div class="detached code-block" id="984373974#uem2oo_34"><pre><code class="language-none">n.- Para [variable] = [inicio] Hasta [fin] Con Paso [paso] Hacer
+       Inicio
+         [Acción]
+       Fin</code></pre></div><p id="984373974#uem2oo_35">Como se puede observar, la estructura <span class="inline-code" id="984373974#uem2oo_43">for</span> consta de una variable de control que se inicializa con un valor inicial y luego se incrementa o decrementa en cada iteraci&oacute;n. El bucle se ejecuta mientras la variable de control est&eacute; dentro del rango especificado.</p><p id="984373974#uem2oo_36">Sin embargo, la estructura <span class="inline-code" id="984373974#uem2oo_44">for</span> tambi&eacute;n puede no declarar la variable de control en la misma l&iacute;nea. En este caso, la variable de control se declara e inicializa fuera del bucle y se incrementa o decrementa dentro del bucle. La estructura <span class="inline-code" id="984373974#uem2oo_45">for</span> en pseudoc&oacute;digo sin declarar la variable de control es la siguiente:</p><div class="detached code-block" id="984373974#uem2oo_37"><pre><code class="language-none">n.- [variable] = [inicio]
+m.- Para Hasta [condición] Con Paso [paso] Hacer
+       Inicio
+         [Acción]
+       Fin</code></pre></div><p id="984373974#uem2oo_38">Como se puede observar, la estructura <span class="inline-code" id="984373974#uem2oo_46">for</span> sin declarar la variable de control consta de una condici&oacute;n que se eval&uacute;a en cada iteraci&oacute;n. El bucle se ejecuta mientras la condici&oacute;n sea verdadera.</p><p id="984373974#uem2oo_39">Por &uacute;ltimo, el segmento <span class="inline-code" id="984373974#uem2oo_47">Con Paso [paso]</span> es opcional y se utiliza para especificar el incremento o decremento de la variable de control en cada iteraci&oacute;n. Si no se especifica, la variable de control se incrementa o decrementa en una unidad por defecto. Adem&aacute;s de esto, el segmento <span class="inline-code" id="984373974#uem2oo_48">Con Paso [paso]</span> tambi&eacute;n puede ser negativo, lo que permite decrementar la variable de control en cada iteraci&oacute;n. Aunque tambi&eacute;n se puede emplear para realizar alg&uacute;n tipo de operaci&oacute;n en la variable de control.</p><section><h3 id="984373974#diagrama-de-flujo" data-toc="diagrama-de-flujo#repetitivas.md-diagrama-de-flujo">Diagrama de flujo</h3><div class="container"><figure class="image-container"><img class="center image image-size" id="984373974#uem2oo_49" alt="for.png" title="for.png" src="C:/Users/Jes%C3%BAs%20Castro/WritersideProjects/algoritmia/Writerside/images/for.png" width="2756" height="1604"><figcaption class="center-text">for.png</figcaption></figure></div></section></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-1952590015">Ejemplos de Bucles</h1><section><h2 id="-1952590015#ejercicio-1" data-toc="ejercicio-1#loop-example.md-ejercicio-1">Ejercicio 1</h2><p id="-1952590015#-tkd9et_5">Se requiere un algoritmo para obtener la suma de diez cantidades. Realice el diagrama de flujo y el pseudoc&oacute;digo.</p><p id="-1952590015#-tkd9et_6">Con base en lo que se requiere determinar se puede establecer que las variables requeridas para la soluci&oacute;n del problema son las mostradas en la tabla:</p><div class="table-wrapper detached"><table id="-1952590015#-tkd9et_7"><tr class="header-row" id="-1952590015#-tkd9et_11"><th id="-1952590015#-tkd9et_29"><p>Variable</p></th><th id="-1952590015#-tkd9et_30"><p>Tipo de Dato</p></th><th id="-1952590015#-tkd9et_31"><p>Descripci&oacute;n</p></th></tr><tr class="" id="-1952590015#-tkd9et_12"><td id="-1952590015#-tkd9et_32"><p><span class="inline-code" id="-1952590015#-tkd9et_35">C</span></p></td><td id="-1952590015#-tkd9et_33"><p>Entero</p></td><td id="-1952590015#-tkd9et_34"><p>Contador</p></td></tr><tr class="" id="-1952590015#-tkd9et_13"><td id="-1952590015#-tkd9et_15"><p><span class="inline-code" id="-1952590015#-tkd9et_18">VA</span></p></td><td id="-1952590015#-tkd9et_16"><p>Real</p></td><td id="-1952590015#-tkd9et_17"><p>Valor por Sumar</p></td></tr><tr class="" id="-1952590015#-tkd9et_14"><td id="-1952590015#-tkd9et_36"><p><span class="inline-code" id="-1952590015#-tkd9et_39">SU</span></p></td><td id="-1952590015#-tkd9et_37"><p>Real</p></td><td id="-1952590015#-tkd9et_38"><p>Suma Acumulada</p></td></tr></table></div><section><h3 id="-1952590015#resolviendo-con-el-ciclo-mientras" data-toc="resolviendo-con-el-ciclo-mientras#loop-example.md-resolviendo-con-el-ciclo-mientras">Resolviendo con el ciclo Mientras</h3><div class="detached code-block" id="-1952590015#-tkd9et_19"><pre><code class="language-none">Nombre del Algoritmo: Suma de 10 Cantidades
+Definición de variables
+    Entero: C
+    Real: VA, SU
+Algoritmo:
+1. Inicio
+2. Hacer C=1
+3. Hacer SU=0
+4. Mientras C&lt;=10
+    Inicio
+        Escribir &quot;Ingrese el valor a sumar&quot;
+        Leer VA
+        Hacer SU=SU+VA
+        Hacer C=C+1
+    Fin
+5. Escribir &quot;La suma de las 10 cantidades es: &quot;, SU
+6. Fin</code></pre></div><div class="container"><figure class="image-container"><img class="center image image-size" id="-1952590015#-tkd9et_20" alt="while_1.png" title="while_1.png" src="C:/Users/Jes%C3%BAs%20Castro/WritersideProjects/algoritmia/Writerside/images/ejemplos/while_1.png" width="1604" height="4324"><figcaption class="center-text">while_1.png</figcaption></figure></div></section><section><h3 id="-1952590015#resolviendo-con-el-ciclo-hasta-que" data-toc="resolviendo-con-el-ciclo-hasta-que#loop-example.md-resolviendo-con-el-ciclo-hasta-que">Resolviendo con el ciclo Hasta Que</h3><div class="detached code-block" id="-1952590015#-tkd9et_21"><pre><code class="language-none">Nombre del Algoritmo: Suma de 10 Cantidades
+Definición de variables
+    Entero: C
+    Real: VA, SU
+Algoritmo:
+1. Inicio
+2. Hacer C=1
+3. Hacer SU=0
+4. Hacer
+    Inicio
+        Escribir &quot;Ingrese el valor a sumar&quot;
+        Leer VA
+        Hacer SU=SU+VA
+        Hacer C=C+1
+    Fin
+   Hasta Que C&gt;10
+5. Escribir &quot;La suma de las 10 cantidades es: &quot;, SU
+6. Fin</code></pre></div><div class="container"><figure class="image-container"><img class="center image image-size" id="-1952590015#-tkd9et_22" alt="do_while_1.png" title="do_while_1.png" src="C:/Users/Jes%C3%BAs%20Castro/WritersideProjects/algoritmia/Writerside/images/ejemplos/do_while_1.png" width="1604" height="4624"><figcaption class="center-text">do_while_1.png</figcaption></figure></div></section><section><h3 id="-1952590015#resolviendo-con-el-ciclo-para" data-toc="resolviendo-con-el-ciclo-para#loop-example.md-resolviendo-con-el-ciclo-para">Resolviendo con el ciclo Para</h3><div class="detached code-block" id="-1952590015#-tkd9et_40"><pre><code class="language-none">Nombre del Algoritmo: Suma de 10 Cantidades
+Definición de variables
+    Entero: C
+    Real: VA, SU
+Algoritmo:
+1. Inicio
+2. Hacer SU=0
+3. Para C=1 Hasta 10 // [Opcional] Con Paso 1
+    Inicio
+        Escribir &quot;Ingrese el valor a sumar&quot;
+        Leer VA
+        Hacer SU=SU+VA
+    Fin
+4. Escribir &quot;La suma de las 10 cantidades es: &quot;, SU
+5. Fin</code></pre></div><div class="container"><figure class="image-container"><img class="center image image-size" id="-1952590015#-tkd9et_41" alt="for_1.png" title="for_1.png" src="C:/Users/Jes%C3%BAs%20Castro/WritersideProjects/algoritmia/Writerside/images/ejemplos/for_1.png" width="1604" height="4124"><figcaption class="center-text">for_1.png</figcaption></figure></div><p id="-1952590015#-tkd9et_42">De estas maneras es como se puede resolver el problema planteado, utilizando los diferentes tipos de ciclos que se pueden encontrar en un lenguaje de programaci&oacute;n.</p></section></section><section><h2 id="-1952590015#ejercicio-2" data-toc="ejercicio-2#loop-example.md-ejercicio-2">Ejercicio 2</h2><p id="-1952590015#-tkd9et_23">Una empresa les paga a sus empleados con base en las horas trabajadas en la semana. Realice un algoritmo para determinar el sueldo semanal de N trabajadores y, adem&aacute;s, calcule cu&aacute;nto pag&oacute; la empresa por los N empleados.</p><p id="-1952590015#-tkd9et_24">Con base en lo que se requiere determinar se puede establecer que las variables requeridas para la soluci&oacute;n del problema son las mostradas en la tabla:</p><div class="table-wrapper detached"><table id="-1952590015#-tkd9et_25"><tr class="header-row" id="-1952590015#-tkd9et_43"><th id="-1952590015#-tkd9et_50"><p>Variable</p></th><th id="-1952590015#-tkd9et_51"><p>Tipo de Dato</p></th><th id="-1952590015#-tkd9et_52"><p>Descripci&oacute;n</p></th></tr><tr class="" id="-1952590015#-tkd9et_44"><td id="-1952590015#-tkd9et_53"><p><span class="inline-code" id="-1952590015#-tkd9et_56">N</span></p></td><td id="-1952590015#-tkd9et_54"><p>Entero</p></td><td id="-1952590015#-tkd9et_55"><p>N&uacute;mero de Empleados</p></td></tr><tr class="" id="-1952590015#-tkd9et_45"><td id="-1952590015#-tkd9et_57"><p><span class="inline-code" id="-1952590015#-tkd9et_60">HT</span></p></td><td id="-1952590015#-tkd9et_58"><p>Real</p></td><td id="-1952590015#-tkd9et_59"><p>Horas Trabajadas</p></td></tr><tr class="" id="-1952590015#-tkd9et_46"><td id="-1952590015#-tkd9et_61"><p><span class="inline-code" id="-1952590015#-tkd9et_64">PH</span></p></td><td id="-1952590015#-tkd9et_62"><p>Real</p></td><td id="-1952590015#-tkd9et_63"><p>Pago por Hora</p></td></tr><tr class="" id="-1952590015#-tkd9et_47"><td id="-1952590015#-tkd9et_65"><p><span class="inline-code" id="-1952590015#-tkd9et_68">SS</span></p></td><td id="-1952590015#-tkd9et_66"><p>Real</p></td><td id="-1952590015#-tkd9et_67"><p>Sueldo Semanal</p></td></tr><tr class="" id="-1952590015#-tkd9et_48"><td id="-1952590015#-tkd9et_69"><p><span class="inline-code" id="-1952590015#-tkd9et_72">ST</span></p></td><td id="-1952590015#-tkd9et_70"><p>Real</p></td><td id="-1952590015#-tkd9et_71"><p>Sueldo Total</p></td></tr><tr class="" id="-1952590015#-tkd9et_49"><td id="-1952590015#-tkd9et_73"><p><span class="inline-code" id="-1952590015#-tkd9et_76">C</span></p></td><td id="-1952590015#-tkd9et_74"><p>Entero</p></td><td id="-1952590015#-tkd9et_75"><p>Contador</p></td></tr></table></div><section><h3 id="-1952590015#resolviendo-con-el-ciclo-mientras-2" data-toc="resolviendo-con-el-ciclo-mientras-2#loop-example.md-resolviendo-con-el-ciclo-mientras-2">Resolviendo con el ciclo Mientras 2</h3><div class="detached code-block" id="-1952590015#-tkd9et_77"><pre><code class="language-none">Nombre del Algoritmo: Sueldo Semanal de N Trabajadores
+Definición de variables
+    Entero: N, C
+    Real: HT, PH, SS, ST
+Algoritmo:
+1. Inicio
+2. Hacer C=1
+3. Hacer ST=0
+4. Escribir &quot;Ingrese el número de empleados&quot;
+5. Leer N
+6. Mientras C&lt;=N Entonces
+    Inicio
+        Escribir &quot;Ingrese las horas trabajadas&quot;
+        Leer HT
+        Escribir &quot;Ingrese el pago por hora&quot;
+        Leer PH
+        Hacer SS=HT*PH
+        Hacer ST=ST+SS
+        Escribir &quot;El sueldo semanal del empleado &quot;, C, &quot; es: &quot;, SS
+        Hacer C=C+1
+    Fin
+7. Escribir &quot;El sueldo total de los &quot;, N, &quot; empleados es: &quot;, ST
+8. Fin</code></pre></div><div class="container"><figure class="image-container"><img class="center image image-size" id="-1952590015#-tkd9et_78" alt="while_2.png" title="while_2.png" src="C:/Users/Jes%C3%BAs%20Castro/WritersideProjects/algoritmia/Writerside/images/ejemplos/while_2.png" width="2224" height="7884"><figcaption class="center-text">while_2.png</figcaption></figure></div></section><section><h3 id="-1952590015#resolviendo-con-el-ciclo-hasta-que-2" data-toc="resolviendo-con-el-ciclo-hasta-que-2#loop-example.md-resolviendo-con-el-ciclo-hasta-que-2">Resolviendo con el ciclo Hasta Que 2</h3><div class="detached code-block" id="-1952590015#-tkd9et_79"><pre><code class="language-none">Nombre del Algoritmo: Sueldo Semanal de N Trabajadores
+Definición de variables
+    Entero: N, C
+    Real: HT, PH, SS, ST
+Algoritmo:
+1. Inicio
+2. Hacer C=1
+3. Hacer ST=0
+4. Escribir &quot;Ingrese el número de empleados&quot;    
+5. Leer N
+6. Hacer
+    Inicio
+        Escribir &quot;Ingrese las horas trabajadas&quot;
+        Leer HT
+        Escribir &quot;Ingrese el pago por hora&quot;
+        Leer PH
+        Hacer SS=HT*PH
+        Hacer ST=ST+SS
+        Escribir &quot;El sueldo semanal del empleado &quot;, C, &quot; es: &quot;, SS
+        Hacer C=C+1
+    Fin
+   Hasta Que C&gt;N
+7. Escribir &quot;El sueldo total de los &quot;, N, &quot; empleados es: &quot;, ST
+8. Fin</code></pre></div></section><section><h3 id="-1952590015#resolviendo-con-el-ciclo-para-2" data-toc="resolviendo-con-el-ciclo-para-2#loop-example.md-resolviendo-con-el-ciclo-para-2">Resolviendo con el ciclo Para 2</h3><div class="detached code-block" id="-1952590015#-tkd9et_80"><pre><code class="language-none">Nombre del Algoritmo: Sueldo Semanal de N Trabajadores
+Definición de variables
+    Entero: N, C
+    Real: HT, PH, SS, ST
+Algoritmo:
+1. Inicio
+2. Hacer ST=0
+3. Escribir &quot;Ingrese el número de empleados&quot;
+4. Leer N
+5. Para C=1 Hasta N Hacer // [Opcional] Con Paso 1
+    Inicio
+        Escribir &quot;Ingrese las horas trabajadas&quot;
+        Leer HT
+        Escribir &quot;Ingrese el pago por hora&quot;
+        Leer PH
+        Hacer SS=HT*PH
+        Hacer ST=ST+SS
+        Escribir &quot;El sueldo semanal del empleado &quot;, C, &quot; es: &quot;, SS
+    Fin
+6. Escribir &quot;El sueldo total de los &quot;, N, &quot; empleados es: &quot;, ST
+7. Fin</code></pre></div></section></section></article></div></section></div></body></html>
