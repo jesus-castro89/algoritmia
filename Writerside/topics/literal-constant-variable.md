@@ -1,4 +1,4 @@
-# Literales, Constantes y Variables en C++
+# Literales
 
 En C++, los literales, constantes y variables son elementos fundamentales para la programación. En este artículo, se
 explicará qué son los literales, constantes y variables en C++, y cómo se utilizan en la programación.
@@ -21,14 +21,3 @@ tipos. Los literales en C++ pueden ser de los siguientes tipos:
 
 En resumen, los literales en C++ son valores constantes que se utilizan en la programación para representar datos de
 diferentes tipos.
-
-## Constantes en C++
-
-Las constantes en C++ son variables cuyo valor no puede ser modificado una vez que ha sido asignado. Las constantes en
-C++ se definen utilizando la palabra clave `const` seguida del tipo de dato y el nombre de la constante. Por ejemplo:
-
-```c++
-const int PI = 3.14159;
-const char LETRA = 'A';
-const string MENSAJE = "Hola, Mundo!";
-```

@@ -25,10 +25,19 @@
         <toc-element topic="loop-example.md"/>
     </toc-element>
     <toc-element topic="subprocesos.md"/>
+    <toc-element toc-title="CLion">
+        <toc-element topic="licencia.md"/>
+        <toc-element topic="instalacion.md"/>
+        <toc-element topic="new-project.md"/>
+    </toc-element>
     <toc-element toc-title="El Lenguaje C++">
         <toc-element topic="introduccion-cpp.md"/>
         <toc-element topic="tipos-cpp.md"/>
         <toc-element topic="input-output.md"/>
         <toc-element topic="literal-constant-variable.md"/>
+        <toc-element topic="variables.md"/>
+        <toc-element topic="constantes.md"/>
+        <toc-element topic="alcances.md"/>
+        <toc-element topic="operadores-cpp.md"/>
     </toc-element>
 </instance-profile>
