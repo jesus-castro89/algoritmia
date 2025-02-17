@@ -39,5 +39,7 @@
         <toc-element topic="constantes.md"/>
         <toc-element topic="alcances.md"/>
         <toc-element topic="operadores-cpp.md"/>
+        <toc-element topic="palabras-reservadas.md"/>
+        <toc-element topic="include.md"/>
     </toc-element>
 </instance-profile>
