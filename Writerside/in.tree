@@ -3,10 +3,9 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="in"
-                 name="Instance Name"
+                 name="Programación Básica"
                  start-page="introduction.md">
 
-    <toc-element topic="introduction.md"/>
     <toc-element topic="algebra-booleana.md"/>
     <toc-element topic="pseudocodigo.md">
         <toc-element topic="instructions.md"/>
@@ -25,21 +24,23 @@
         <toc-element topic="loop-example.md"/>
     </toc-element>
     <toc-element topic="subprocesos.md"/>
-    <toc-element toc-title="CLion">
+    <toc-element toc-title="El Editor IntelliJ IDEA">
         <toc-element topic="licencia.md"/>
-        <toc-element topic="instalacion.md"/>
-        <toc-element topic="new-project.md"/>
+        <toc-element topic="editor-java.md"/>
+        <toc-element topic="java-project.md"/>
     </toc-element>
-    <toc-element toc-title="El Lenguaje C++">
-        <toc-element topic="introduccion-cpp.md"/>
-        <toc-element topic="tipos-cpp.md"/>
-        <toc-element topic="input-output.md"/>
-        <toc-element topic="literal-constant-variable.md"/>
-        <toc-element topic="variables.md"/>
-        <toc-element topic="constantes.md"/>
-        <toc-element topic="alcances.md"/>
-        <toc-element topic="operadores-cpp.md"/>
-        <toc-element topic="palabras-reservadas.md"/>
-        <toc-element topic="include.md"/>
+    <toc-element toc-title="El lenguaje Java">
+        <toc-element topic="introduction.md"/>
+        <toc-element topic="que-es-java.md"/>
+        <toc-element topic="tipos-datos.md"/>
+        <toc-element topic="literal-constant.md"/>
+        <toc-element topic="alcance.md"/>
+        <toc-element topic="operadores-java.md"/>
+        <toc-element topic="class-object.md"/>
+        <toc-element topic="main.md"/>
+    </toc-element>
+    <toc-element topic="outputs.md"/>
+    <toc-element toc-title="Practicas">
+        <toc-element topic="practica-1.md"/>
     </toc-element>
 </instance-profile>

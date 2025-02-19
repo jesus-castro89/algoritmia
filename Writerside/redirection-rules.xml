@@ -26,4 +26,57 @@
         <description>Created after removal of "Condiciones complejas en los ciclos" from Instance Name</description>
         <accepts>complex-conditions.html</accepts>
     </rule>
+    <rule id="6664317f">
+        <description>Created after removal of "¿Qué es C++?" from Programación Básica</description>
+        <accepts>introduccion-cpp.html</accepts>
+    </rule>
+    <rule id="49aaab27">
+        <description>Created after removal of "Tipos de Datos en C++" from Programación Básica</description>
+        <accepts>tipos-cpp.html</accepts>
+    </rule>
+    <rule id="7277d631">
+        <description>Created after removal of "Entrada y Salida de Información en C++" from Programación Básica
+        </description>
+        <accepts>input-output.html</accepts>
+    </rule>
+    <rule id="29610442">
+        <description>Created after removal of "Literales" from Programación Básica</description>
+        <accepts>literal-constant-variable.html</accepts>
+    </rule>
+    <rule id="7bced997">
+        <description>Created after removal of "Variables" from Programación Básica</description>
+        <accepts>variables.html</accepts>
+    </rule>
+    <rule id="4efd4ecd">
+        <description>Created after removal of "Constantes en C++" from Programación Básica</description>
+        <accepts>constantes.html</accepts>
+    </rule>
+    <rule id="3bee66f7">
+        <description>Created after removal of "Alcance de Variables en C++" from Programación Básica</description>
+        <accepts>alcances.html</accepts>
+    </rule>
+    <rule id="1bff160a">
+        <description>Created after removal of "Los operadores" from Programación Básica</description>
+        <accepts>operadores-cpp.html</accepts>
+    </rule>
+    <rule id="6a82ac71">
+        <description>Created after removal of "Palabras Reservadas en C++" from Programación Básica</description>
+        <accepts>palabras-reservadas.html</accepts>
+    </rule>
+    <rule id="1e2db2ef">
+        <description>Created after removal of "La palabra `include` en C++" from Programación Básica</description>
+        <accepts>include.html</accepts>
+    </rule>
+    <rule id="2df98318">
+        <description>Created after removal of "Instalar CLion" from Programación Básica</description>
+        <accepts>instalacion.html</accepts>
+    </rule>
+    <rule id="58a83db9">
+        <description>Created after removal of "Crear un Proyecto en CLion" from Programación Básica</description>
+        <accepts>new-project.html</accepts>
+    </rule>
+    <rule id="502b30b1">
+        <description>Created after removal of "inputs" from Programación Básica</description>
+        <accepts>inputs.html</accepts>
+    </rule>
 </rules>
