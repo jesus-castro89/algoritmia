@@ -203,6 +203,33 @@ public class EstructuraSwitchJava12 {
 En este ejemplo, se utiliza la nueva sintaxis de la estructura `switch` introducida en Java 12, que permite simplificar
 la escritura del código y eliminar la necesidad de la palabra clave `break`.
 
+Esta versión mejorada de la estructura `switch` es más concisa y legible, lo que facilita la escritura y mantenimiento
+del código. Además de usarse en situaciones en la cuales se necesita devolver un valor respecto a una expresión, como
+por ejemplo:
+
+```java
+public class EstructuraSwitchJava12 {
+    
+    public static String obtenerNombreDia(int diaSemana) {
+        return switch (diaSemana) {
+            case 1 -> "Lunes";
+            case 2 -> "Martes";
+            case 3 -> "Miércoles";
+            case 4 -> "Jueves";
+            case 5 -> "Viernes";
+            case 6 -> "Sábado";
+            case 7 -> "Domingo";
+            default -> "Día no válido";
+        };
+    }
+    
+    public static void main(String[] args) {
+        int diaSemana = 1;
+        System.out.println(obtenerNombreDia(diaSemana));
+    }
+}
+```
+
 ## Conclusión
 
 Las estructuras de decisión en Java son fundamentales para controlar el flujo de ejecución de un programa y permiten
