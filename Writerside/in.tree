@@ -44,6 +44,10 @@
         <toc-element topic="outputs.md"/>
         <toc-element topic="joptionpane.md"/>
     </toc-element>
+    <toc-element toc-title="Clases Genéricas">
+        <toc-element topic="math.md"/>
+        <toc-element topic="string-builder.md"/>
+    </toc-element>
     <toc-element toc-title="Control de Flujo">
         <toc-element topic="secuencial.md"/>
         <toc-element topic="desicion.md"/>
@@ -51,6 +55,7 @@
         <toc-element topic="while.md"/>
         <toc-element topic="do-while.md"/>
         <toc-element topic="for.md"/>
+        <toc-element topic="ciclos-anidados.md"/>
     </toc-element>
     <toc-element toc-title="Practicas">
         <toc-element topic="practica-1.md"/>
