@@ -54,6 +54,6 @@ indicando que el dato no es válido, y se deberá solicitar nuevamente el dato d
 
 ## Fecha de entrega
 
-La fecha de entrega de la actividad es el martes 11 de marzo de 2025, a las 11:59 PM (media noche).
+La fecha de entrega de la actividad es el miércoles 12 de marzo de 2025, a las 11:59 PM (media noche).
 
 > Actividades entregadas fuera de la fecha y hora límite no serán consideradas para la evaluación.
