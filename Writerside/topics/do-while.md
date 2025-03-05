@@ -93,6 +93,40 @@ Ambas formas de escribir los ciclos son válidas y pueden utilizarse según la p
 legibilidad del código. Es importante recordar que la elección entre un ciclo `do-while` y un ciclo `while` depende de
 si se necesita ejecutar el bloque de código al menos una vez o no.
 
+Ahora veamos la comparación de un mismo código con `do-while` y `while`:
+
+<compare>
+
+```java
+    public class CicloDoWhile {
+        public static void main(String[] args) {
+            int contador = 0;
+            
+            do {
+            
+                System.out.println("Contador: " + contador);
+                contador++;
+            } while (contador < 5);
+        }
+    }
+```
+
+```java
+    public class CicloWhile {
+        public static void main(String[] args) {
+            int contador = 0;
+            
+            while (!(contador >= 5)) {
+            
+                System.out.println("Contador: " + contador);
+                contador++;
+            }
+        }
+    }
+```
+
+</compare>
+
 ## Conclusión
 
 El ciclo `do-while` en Java es una estructura de control que se utiliza para ejecutar un bloque de código al menos una
