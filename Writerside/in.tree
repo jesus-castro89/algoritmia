@@ -71,4 +71,6 @@
     <toc-element toc-title="Practicas">
         <toc-element topic="practica-1.md"/>
     </toc-element>
+    <toc-element toc-title="Actividades"/>
+    <toc-element topic="actividad-1.md"/>
 </instance-profile>
