@@ -71,6 +71,11 @@
         <toc-element topic="final.md"/>
         <toc-element topic="funcion.md"/>
     </toc-element>
+    <toc-element toc-title="Recursividad, Niveles y Registros">
+        <toc-element topic="recursividad.md"/>
+        <toc-element topic="records.md"/>
+        <toc-element topic="private-public.md"/>
+    </toc-element>
     <toc-element toc-title="Practicas">
         <toc-element topic="practica-1.md"/>
         <toc-element topic="practica-2.md"/>
@@ -78,5 +83,6 @@
     </toc-element>
     <toc-element toc-title="Actividades">
         <toc-element topic="actividad-1.md"/>
+        <toc-element topic="actividad-2.md"/>
     </toc-element>
 </instance-profile>

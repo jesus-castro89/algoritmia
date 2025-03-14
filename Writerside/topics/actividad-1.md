@@ -57,6 +57,8 @@ indicando que el dato no es válido, y se deberá solicitar nuevamente el dato d
 La fecha de entrega de la actividad es el miércoles 12 de marzo de 2025, a las 11:59 PM (media noche).
 
 > **Actividades entregadas fuera de la fecha y hora límite no serán consideradas para la evaluación.**
+> 
 > **Miembro del equipo que no se encuentre en portada no recibirá calificación.**
+> 
 > **Actividades en otro lenguaje ajeno a Java, no serán consideradas para la evaluación.**
 > {style=warning}
