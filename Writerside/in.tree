@@ -76,6 +76,12 @@
         <toc-element topic="records.md"/>
         <toc-element topic="private-public.md"/>
     </toc-element>
+    <toc-element toc-title="Arreglos">
+        <toc-element topic="arreglos.md">
+        </toc-element>
+        <toc-element topic="matriz.md"/>
+        <toc-element topic="dimension-n.md"/>
+    </toc-element>
     <toc-element toc-title="Practicas">
         <toc-element topic="practica-1.md"/>
         <toc-element topic="practica-2.md"/>
