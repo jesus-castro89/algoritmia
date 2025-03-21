@@ -2,7 +2,7 @@ public class Anagrama {
 
     public static void main(String[] args) {
 
-        anagramas("abc");
+        anagramas("roma");
     }
 
     /**
@@ -25,6 +25,7 @@ public class Anagrama {
      * @param letras   Letras que quedan por formar el anagrama
      */
     public static void anagramas(String anagrama, char[] letras) {
+        System.out.println("anagrama: " + anagrama + " letras: " + new String(letras));
         // Recorremos las letras que quedan por formar el anagrama
         for (int i = 0; i < letras.length; i++) {
             // Creamos un nuevo array de longitud una unidad menor que el array de letras
