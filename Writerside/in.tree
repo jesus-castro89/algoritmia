@@ -82,6 +82,7 @@
         <toc-element topic="matriz.md"/>
         <toc-element topic="dimension-n.md"/>
         <toc-element topic="arrays.md"/>
+        <toc-element topic="arreglos-dinamicos.md"/>
     </toc-element>
     <toc-element toc-title="Practicas">
         <toc-element topic="practica-1.md"/>
