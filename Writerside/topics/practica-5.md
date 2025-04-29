@@ -18,32 +18,33 @@ métodos de manera adecuada.
    atributo.
 3. Crea una clase `Dealership` que represente la concesionaria de vehículos. Esta clase debe tener los siguientes
    atributos:
-    - `vehicles`: una lista de vehículos disponibles en la concesionaria (List<Vehicle>).
-    - `totalPrice`: el precio total de los vehículos en stock (double).
-    - `totalStock`: la cantidad total de vehículos en stock (int).
-    - `totalVehicles`: la cantidad total de vehículos en la concesionaria (int).
-    - `totalVehiclesSold`: la cantidad total de vehículos vendidos (int).
+   * `vehicles`: una lista de vehículos disponibles en la concesionaria (`List<Vehicle>`).
+   * `totalPrice`: el precio total de los vehículos en stock (double).
+   * `totalStock`: la cantidad total de vehículos en stock (int).
+   * `totalVehicles`: la cantidad total de vehículos en la concesionaria (int).
+   * `totalVehiclesSold`: la cantidad total de vehículos vendidos (int).
+   
 4. La clase `Dealership` debe tener un constructor que inicialice la lista de vehículos y los demás atributos a cero.
 5. La clase `Dealership` debe tener los siguientes métodos:
-    - `addVehicle(Vehicle vehicle)`: agrega un vehículo a la lista de vehículos disponibles en la concesionaria.
-    - `calculateTotalPrice()`: calcula el precio total de los vehículos en stock y lo almacena en el atributo
-      `totalPrice`.
-    - `calculateTotalStock()`: calcula la cantidad total de vehículos en stock y lo almacena en el atributo
-      `totalStock`.
-    - `calculateTotalVehicles()`: calcula la cantidad total de vehículos en la concesionaria y lo almacena en el
-      atributo `totalVehicles`.
-    - `calculateTotalVehiclesSold()`: calcula la cantidad total de vehículos vendidos y lo almacena en el atributo
-      `totalVehiclesSold`.
-    - `showAvailableVehicles()`: muestra la lista de vehículos disponibles en la concesionaria.
+   - `addVehicle(Vehicle vehicle)`: agrega un vehículo a la lista de vehículos disponibles en la concesionaria.
+   - `calculateTotalPrice()`: calcula el precio total de los vehículos en stock y lo almacena en el atributo
+     `totalPrice`.
+   - `calculateTotalStock()`: calcula la cantidad total de vehículos en stock y lo almacena en el atributo
+     `totalStock`.
+   - `calculateTotalVehicles()`: calcula la cantidad total de vehículos en la concesionaria y lo almacena en el
+     atributo `totalVehicles`.
+   - `calculateTotalVehiclesSold()`: calcula la cantidad total de vehículos vendidos y lo almacena en el atributo
+     `totalVehiclesSold`.
+   - `showAvailableVehicles()`: muestra la lista de vehículos disponibles en la concesionaria.
 6. Crea una clase `DealerShipApp` que contenga un menú para interactuar con el usuario. El menú debe permitir al
    usuario realizar las siguientes acciones:
-    - Agregar un vehículo a la concesionaria.
-    - Calcular el precio total de los vehículos en stock.
-    - Calcular la cantidad total de vehículos en stock.
-    - Calcular la cantidad total de vehículos en la concesionaria.
-    - Calcular la cantidad total de vehículos vendidos.
-    - Mostrar la lista de vehículos disponibles en la concesionaria.
-    - Salir del programa.
+   - Agregar un vehículo a la concesionaria.
+   - Calcular el precio total de los vehículos en stock.
+   - Calcular la cantidad total de vehículos en stock.
+   - Calcular la cantidad total de vehículos en la concesionaria.
+   - Calcular la cantidad total de vehículos vendidos.
+   - Mostrar la lista de vehículos disponibles en la concesionaria.
+   - Salir del programa.
 7. Utiliza la modularidad en tu código, organizando las clases y métodos de manera adecuada. Asegúrate de que cada
    clase tenga una única responsabilidad y que los métodos sean lo más simples posible.
 8. Utiliza comentarios en tu código para explicar la funcionalidad de cada clase y método.
