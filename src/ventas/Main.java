@@ -8,7 +8,7 @@ import java.awt.*;
 
 public class Main {
 
-    static{
+    static {
         UIManager.put("OptionPane.messageFont",
                 new Font("Arial", Font.BOLD, 24));
         UIManager.put("OptionPane.buttonFont",
@@ -21,7 +21,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Shop shop = new Shop();
-        shop.menu();
+//        Shop shop = new Shop();
+//        shop.menu();
+        String input = JOptionPane.showInputDialog("Ingresa texto");
+        JOptionPane.showMessageDialog(null, input);
     }
 }

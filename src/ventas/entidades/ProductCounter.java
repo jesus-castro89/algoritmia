@@ -6,15 +6,13 @@ public class ProductCounter {
     public int quantity;
 
     public ProductCounter(Product product, int quantity) {
+
         this.product = product;
         this.quantity = quantity;
     }
 
-    public Product getProduct() {
-        return product;
-    }
+    public void sellProduct() {
 
-    public int getQuantity() {
-        return quantity;
+        product.decrementQuantity(quantity);
     }
 }
