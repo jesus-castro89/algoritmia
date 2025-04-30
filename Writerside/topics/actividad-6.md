@@ -55,9 +55,48 @@ La clase debe de contar con los siguientes atributos:
 4. **Implementar el método `isValid(int row, int col, int num)`**: Este método debe verificar si es válido colocar un
    número en una posición específica del Sudoku.
 5. **Implementar los métodos `isValidRow(int row, int num)`, `isValidColumn(int col, int num)` y
-   `isValidBox(int row, int col, int num)`**: Estos métodos deben verificar si el número ya existe en la fila,
-   columna o subcuadrante correspondiente.
-6. **Implementar el método `printSudoku()`**: Este método debe imprimir el Sudoku en un formato legible utilizando
+   `isValidBox(int row, int col, int num)`: **Estos métodos deben verificar si el número ya existe en la fila,
+   columna o subcuadrante correspondiente**.
+6. **Implementar el método `isValidColumn(int col, int num)`**: Este método debe verificar si el número ya existe en la
+   columna. Para ello se debe recorrer la columna y comparar el número que se quiere colocar con los números que ya
+   existen en la columna. Si el número ya existe, se debe retornar `false`, de lo contrario se debe retornar `true`.
+    * Ten en cuenta que existe la clase  `IntStream` que permite recorrer un arreglo de enteros y
+      la función `noneMatch` que permite verificar si un número no existe en el arreglo.
+    * ```java
+        IntStream.range(0, sudoku.length).noneMatch(i -> sudoku[i][col] == num);
+      ```
+7. **Implementar el método `isValidRow(int row, int num)`**: Este método debe verificar si el número ya existe en la
+   fila. Para ello se debe recorrer la fila y comparar el número que se quiere colocar con los números que ya existen
+   en la fila. Si el número ya existe, se debe retornar `false`, de lo contrario se debe retornar `true`.
+    * Ten en cuenta que existe la clase  `IntStream` que permite recorrer un arreglo de enteros y
+      la función `noneMatch` que permite verificar si un número no existe en el arreglo.
+    * ```java
+        IntStream.range(0, sudoku.length).noneMatch(i -> sudoku[row][i] == num);
+      ```
+8. **Implementar el método `isValidBox(int row, int col, int num)`**: Este método debe verificar si el número ya existe
+   en el subcuadrante. Para ello se debe recorrer el subcuadrante y comparar el número que se quiere colocar con los
+   números que ya existen en el subcuadrante. Si el número ya existe, se debe retornar `false`, de lo contrario se debe
+   retornar `true`.
+    * Recuerda que puedes obtener una submatriz de 3x3 utilizando un bucle anidado que recorra las filas y
+      columnas del subcuadrante, o bien utilizando la función `Arrays.copyOfRange` para copiar la submatriz.
+    * ```java
+        int startRow = (row / 3) * 3;
+        int startCol = (col / 3) * 3;
+        for (int i = startRow; i < startRow + 3; i++) {
+            for (int j = startCol; j < startCol + 3; j++) {
+                if (sudoku[i][j] == num) {
+                    return false;
+                }
+            }
+        }
+        return true;
+      ```
+    * ```java
+        IntStream.range(0, 3).noneMatch(i -> IntStream.range(0, 3).noneMatch(j -> sudoku[startRow + i][startCol + j] == num));
+      ```
+    * Recuerda que en cualquier caso debes calcular la posición inicial del subcuadrante utilizando la
+      división entera entre 3, y multiplicar el resultado por 3.
+7. **Implementar el método `printSudoku()`**: Este método debe imprimir el Sudoku en un formato legible utilizando
    JOptionPane.
 7. **Crear una clase `Main`**: En esta clase, crea un menú de opciones que permita a los usuarios generar un Sudoku,
    resolverlo, validarlo y mostrarlo. Utiliza la clase `SudokuGenerator` para implementar la funcionalidad del sistema.
