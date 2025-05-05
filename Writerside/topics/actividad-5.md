@@ -1,4 +1,4 @@
-# Actividad 5: Módulando un sistema de torneos de videojuegos
+# Actividad 5: Modulando un sistema de torneos de videojuegos
 
 ## Descripción del problema
 
