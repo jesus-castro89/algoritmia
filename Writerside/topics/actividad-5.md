@@ -21,7 +21,18 @@ modular el sistema en diferentes paquetes y clases, siguiendo los principios de 
    atributos.
 5. **Crear una clase `Main`**: En esta clase, crea un menú de opciones que permita a los usuarios registrar jugadores,
    generar equipos, inscribir equipos en torneos y mostrar los resultados. Utiliza las clases definidas en los paquetes
-   anteriores para implementar la funcionalidad del sistema.
+   anteriores para implementar la funcionalidad del sistema, las cuales son:
+    - **Agregar Equipo**: Permite al usuario agregar un nuevo equipo al torneo.
+    - **Agregar Jugador a Equipo**: Permite al usuario agregar un jugador a un equipo existente.
+    - **Eliminar Jugador de Equipo**: Permite al usuario eliminar un jugador de un equipo existente.
+    - **Agregar Torneo**: Permite al usuario agregar un nuevo torneo al sistema.
+    - **Inscribir un Equipo en un Torneo**: Permite al usuario inscribir un equipo en un torneo existente.
+    - **Asignar Resultado**: Permite al usuario asignar un resultado a un torneo.
+    - **Mostrar Resultados**: Permite al usuario mostrar los resultados de un torneo.
+    - **Mostrar Equipos**: Permite al usuario mostrar los equipos inscritos en un torneo.
+    - **Mostrar Jugadores**: Permite al usuario mostrar los jugadores de un equipo.
+    - **Mostrar Jugadores de un Torneo**: Permite al usuario mostrar los jugadores inscritos en un torneo.
+    - **Salir**: Permite al usuario salir del sistema.
 6. **Implementar la modularidad**: Asegúrate de que cada paquete y clase tenga una única responsabilidad y que el código
    esté organizado de manera lógica. Utiliza principios de modularidad y reutilización de código para facilitar el
    mantenimiento y la escalabilidad del sistema.

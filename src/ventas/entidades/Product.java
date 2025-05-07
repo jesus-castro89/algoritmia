@@ -1,6 +1,6 @@
 package ventas.entidades;
 
-import ventas.logic.InputManager;
+import com.tec.input.InputManager;
 
 import javax.swing.*;
 

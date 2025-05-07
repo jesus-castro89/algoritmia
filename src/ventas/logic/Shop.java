@@ -1,7 +1,7 @@
 package ventas.logic;
 
 
-import tables.Fruit;
+import com.tec.input.InputManager;
 import ventas.entidades.Product;
 import ventas.entidades.ProductCounter;
 
