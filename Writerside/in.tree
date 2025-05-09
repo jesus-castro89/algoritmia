@@ -101,6 +101,10 @@
         <toc-element topic="stream-class.md"/>
         <toc-element topic="intstream.md"/>
     </toc-element>
+    <toc-element toc-title="Clases Genéricas">
+        <toc-element topic="clases-genericas.md"/>
+        <toc-element topic="validador-generico.md"/>
+    </toc-element>
     <toc-element toc-title="Practicas">
         <toc-element topic="practica-1.md"/>
         <toc-element topic="practica-2.md"/>
