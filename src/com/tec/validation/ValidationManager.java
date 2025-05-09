@@ -1,23 +1,3 @@
-# Creando un validador genérico en Java
-
-Hemos visto que cuando solicitamos datos mediante `JOptionPane`, estos se devuelven como cadenas de texto, lo que puede
-ser un problema si necesitamos trabajar con tipos de datos específicos, como enteros o números de punto flotante. Para
-solucionar este problema, podemos crear un validador genérico que convierta las cadenas de texto en el tipo de dato
-deseado.
-
-## ¿Qué es un validador genérico?
-
-Un validador genérico es una clase que permite validar y convertir valores de un tipo de dato a otro de forma genérica.
-En el caso de Java, podemos crear un validador genérico que convierta cadenas de texto en valores enteros, números de
-punto flotante, etc. Y en caso de que la conversión no sea posible, se puede lanzar una excepción o devolver un valor
-predeterminado.
-
-## Creando un validador genérico
-
-Para nuestros proyectos, deberemos que crear la clase `ValidationManager` en el paquete `com.tec.validation` y crear
-la siguiente clase:
-
-```java
 package com.tec.validation;
 
 import javax.swing.*;
@@ -90,4 +70,3 @@ public class ValidationManager {
         return result;
     }
 }
-```

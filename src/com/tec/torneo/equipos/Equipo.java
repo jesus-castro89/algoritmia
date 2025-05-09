@@ -1,9 +1,9 @@
 package com.tec.torneo.equipos;
 
 import com.tec.torneo.jugadores.Jugador;
-import com.tec.input.InputManager;
+import com.tec.validation.ValidationManager;
 
-import javax.swing.*;
+import javax.xml.validation.Validator;
 import java.util.ArrayList;
 
 public class Equipo {
@@ -17,26 +17,26 @@ public class Equipo {
     }
 
     public void agregarJugador() {
-        String nombre = InputManager.validate(String.class,
-                "Ingrese el nombre del jugador",
-                "El nombre no puede estar vacío",
-                "Agregar Jugador");
-        String nickname = InputManager.validate(String.class,
-                "Ingrese el nickname del jugador",
-                "El nickname no puede estar vacío",
-                "Agregar Jugador");
-        int edad = InputManager.validate(Integer.class,
-                "Ingrese la edad del jugador",
-                "La edad no puede estar vacía",
-                "Agregar Jugador");
+        String nombre = ValidationManager.validate(String.class,
+                "Ingrese el nombre del Jugador",
+                "Nombre inválido",
+                "Agregar Jugador al Equipo");
+        String nickname = ValidationManager.validate(String.class,
+                "Ingrese el nickname del Jugador",
+                "Nickname inválido",
+                "Agregar Jugador al Equipo");
+        int edad = ValidationManager.validate(Integer.class,
+                "Ingrese la edad del Jugador",
+                "Edad inválida",
+                "Agregar Jugador al Equipo");
         jugadores.add(new Jugador(nombre, nickname, edad));
     }
 
     public void eliminarJugador() {
-        Jugador jugador = InputManager.getOption(
+        Jugador jugador = ValidationManager.validate(jugadores.toArray(new Jugador[0]),
                 "Seleccione el jugador a eliminar",
-                "Eliminar Jugador",
-                jugadores.toArray(new Jugador[0]));
+                "Jugador inválido",
+                "Eliminar Jugador");
         jugadores.remove(jugador);
     }
 

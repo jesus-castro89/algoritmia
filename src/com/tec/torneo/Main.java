@@ -1,11 +1,9 @@
 package com.tec.torneo;
 
-import com.tec.input.InputManager;
 import com.tec.torneo.equipos.Equipo;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.Arrays;
 
 public class Main {
 
