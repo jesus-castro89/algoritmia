@@ -37,7 +37,7 @@ public class SudokuGenerator {
         int nextRow;
         int nextColumn;
         Integer[] numbers;
-        if (row != 9) {
+        if (row > 0 && row < 9 && column > 0 && column < 9) {
             nextRow = (column == 8) ? row + 1 : row;
             nextColumn = (column + 1) % 9;
             numbers = shuffledNumbers();
