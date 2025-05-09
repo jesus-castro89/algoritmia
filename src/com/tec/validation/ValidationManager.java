@@ -54,6 +54,21 @@ public class ValidationManager {
         return result;
     }
 
+    /**
+     * Función que valida la entrada de un tipo de dato específico,
+     * y que además cumpla con una condición específica. Un ejemplo de uso
+     * es el siguiente:
+     * <br>
+     * {@code Validator.validate((i) -> i > 0, Integer.class, "Ingrese un número entero positivo",
+     * "Número inválido", "Validación de número entero");}
+     *
+     * @param type Tipo de dato a validar
+     * @param condition Condición que debe cumplir el dato
+     * @param inputMessage Mensaje de entrada
+     * @param errorMessage Mensaje de error
+     * @param windowTitle Título de la ventana
+     * @return Dato validado
+     */
     public static <T> T validate(Class<T> type, Predicate<T> condition, String inputMessage, String errorMessage, String windowTitle) {
         boolean valid = false;
         T result = null;

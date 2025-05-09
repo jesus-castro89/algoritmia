@@ -2,6 +2,7 @@ package com.tec.torneo.torneos;
 
 import com.tec.torneo.equipos.Equipo;
 import com.tec.torneo.resultados.Resultado;
+import com.tec.validation.ValidationManager;
 
 import java.util.ArrayList;
 
@@ -18,6 +19,16 @@ public class Torneo {
     }
 
     public void agregarEquipo() {
+        String nombreEquipo = ValidationManager.validate(String.class,
+                "Ingrese el nombre del equipo: ",
+                "Nombre inválido.",
+                "Agregar Equipo");
+        equipos.add(new Equipo(nombreEquipo));
+    }
+
+    @Override
+    public String toString() {
+        return "Torneo %s".formatted(nombre);
     }
 
     public Resultado getResultado() {

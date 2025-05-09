@@ -14,7 +14,7 @@ public class Jugador {
 
     @Override
     public String toString() {
-        return "%s".formatted(nombre);
+        return "%s [%s] - %d años".formatted(nombre, nickname, edad);
     }
 
     public String getNombre() {

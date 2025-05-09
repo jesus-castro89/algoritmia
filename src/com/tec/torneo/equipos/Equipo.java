@@ -26,8 +26,9 @@ public class Equipo {
                 "Nickname inválido",
                 "Agregar Jugador al Equipo");
         int edad = ValidationManager.validate(Integer.class,
+                (i -> i > 15 && i < 30),
                 "Ingrese la edad del Jugador",
-                "Edad inválida",
+                "La edad debe ser mayor a 15 y menor a 30",
                 "Agregar Jugador al Equipo");
         jugadores.add(new Jugador(nombre, nickname, edad));
     }
@@ -38,6 +39,11 @@ public class Equipo {
                 "Jugador inválido",
                 "Eliminar Jugador");
         jugadores.remove(jugador);
+    }
+
+    @Override
+    public String toString() {
+        return "Equipo %s".formatted(nombre);
     }
 
     public String getNombre() {
