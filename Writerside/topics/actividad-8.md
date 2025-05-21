@@ -131,5 +131,5 @@ diálogo.
 ## Notas
 
 - El sistema debe ser entregado en un archivo comprimido (zip) que contenga el código fuente y las pruebas.
-- La fecha de entrega es el 28 de mayo de 2025 a las 23:59 horas.
+- La fecha de entrega es el 27 de mayo de 2025 a las 23:59 horas.
 - Trabajo entregado en fecha posterior no será tomado en cuenta.
