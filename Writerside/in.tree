@@ -107,6 +107,7 @@
     </toc-element>
     <toc-element topic="apuntadores.md"/>
     <toc-element topic="fielmanager.md"/>
+    <toc-element topic="archivos.md"/>
     <toc-element toc-title="Practicas">
         <toc-element topic="practica-1.md"/>
         <toc-element topic="practica-2.md"/>
